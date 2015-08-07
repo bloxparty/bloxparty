@@ -1,0 +1,37 @@
+.Games {
+  display: inline-block;
+  width: 300px;
+}
+
+.Games-head {
+  color: rgb(230, 230, 230);
+}
+
+.Games-listContainer {
+  border-radius: var(--border-radius);
+  border: 1px solid #000;
+  background: var(--color-dark-gray);
+  min-height: 300px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.Games-list {
+  list-style-type: none;
+}
+
+.Games-listItem {
+  border-bottom: 1px solid #000;
+  color: #0080AB;
+  cursor: pointer;
+  padding: var(--space-medium-px);
+  text-align: center;
+}
+
+.Games-listItem:hover {
+  background: var(--color-dark-gray-alt);
+}
+
+.Games-name:hover {
+  color: #61CAED;
+}

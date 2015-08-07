@@ -1,0 +1,11 @@
+.Game {
+  margin: 20px auto;
+}
+
+.Game-playerControls {
+  /*align-items: flex-end;
+  display: inline-flex;
+  flex-flow: row nowrap;
+  height: 600px;*/
+  padding: var(--space-large-px);
+}

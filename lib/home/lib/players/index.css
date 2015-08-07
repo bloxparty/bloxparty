@@ -1,0 +1,31 @@
+.Players {
+  display: inline-block;
+  /*border: 1px solid #000;*/
+  width: 300px;
+}
+
+.Players-head {
+  color: rgb(230, 230, 230);
+}
+
+.Players-listContainer {
+  border-radius: var(--border-radius);
+  border: 1px solid #000;
+  /*box-shadow: inset 0 0 10px #000000;*/
+  background: var(--color-dark-gray);
+  min-height: 300px;
+  /*padding: var(--space-medium-px);*/
+}
+
+.Players-list {
+  list-style-type: none;
+}
+
+.Players-listItem {
+  border-bottom: 1px solid #000;
+  /*color: #0080AB;*/
+  /*cursor: pointer;*/
+  /*margin: var(--space-small-px) 0;*/
+  padding: var(--space-medium-px);
+  text-align: center;
+}

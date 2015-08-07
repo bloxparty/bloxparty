@@ -1,0 +1,30 @@
+{
+  "name": "bloxparty",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "author": "River Grimm <river.grimm@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "bus": "^0.1.0",
+    "chokidar-cli": "^1.0.1",
+    "duo": "^0.15.2",
+    "duo-babel": "^6.0.0",
+    "duo-myth": "^0.2.0",
+    "electron-packager": "^3.3.0",
+    "electron-prebuilt": "^0.25.3",
+    "mocha": "^2.2.5",
+    "myth": "^1.5.0",
+    "socket.io-client": "^1.3.5",
+    "standard": "^4.2.0"
+  },
+  "dependencies": {
+    "cuid": "^1.2.5",
+    "http": "0.0.0",
+    "moniker": "^0.1.2",
+    "socket.io": "^1.3.5"
+  }
+}

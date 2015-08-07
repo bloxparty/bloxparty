@@ -1,0 +1,12 @@
+@import './lib/games';
+@import './lib/players';
+
+.Home {
+  margin: 0px auto;
+  padding: var(--space-page-padding);
+}
+
+.Home-newGameButton {
+  display: block;
+  margin-top: var(--space-large-px);
+}
