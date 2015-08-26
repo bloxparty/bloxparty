@@ -1,9 +1,9 @@
 @import './lib/games';
-@import './lib/players';
 
 .Home {
   margin: 0px auto;
   padding: var(--space-page-padding);
+  width: 600px;
 }
 
 .Home-newGameButton {

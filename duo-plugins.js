@@ -3,8 +3,8 @@ var myth = require('duo-myth')
 
 module.exports = [
   babel({
-    onlyLocals: true,
-    jsxPragma: 'element'
+    jsxPragma: 'element',
+    ignore: ['components/automattic-socket.*@*/**.js']
   }),
   myth()
 ]

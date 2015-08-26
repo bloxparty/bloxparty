@@ -1,0 +1,9 @@
+.Preview {}
+
+.Preview-head {
+  text-align: center;
+}
+
+.Preview-canvas {
+  background: #222;
+}

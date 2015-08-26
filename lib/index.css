@@ -19,14 +19,19 @@
 @import 'suitcss/utils-size';
 @import 'suitcss/utils-align';
 @import './app';
-@import './topbar';
+@import './sidebar';
 @import './connect';
 @import './home';
 @import './game';
 
+html {
+  height: 100%;
+}
+
 body {
   background-color: var(--color-gray);
   color: var(--color-silver);
+  height: 100%;
 }
 
 input {
@@ -48,4 +53,5 @@ input:focus {
 
 #app {
   width: 100%;
+  height: 100%;
 }

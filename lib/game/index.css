@@ -1,11 +1,44 @@
+@import './lib/canvas';
+@import './lib/preview';
+
 .Game {
-  margin: 20px auto;
 }
 
 .Game-playerControls {
-  /*align-items: flex-end;
-  display: inline-flex;
-  flex-flow: row nowrap;
-  height: 600px;*/
+  display: inline-block;
   padding: var(--space-large-px);
+  vertical-align: top;
+}
+
+.Game-playerCanvasContainer,
+.Game-opponentCanvasContainer,
+.Game-opponents {
+  display: inline-block;
+  background: #222;
+}
+
+.Game-gameRoomName {
+  margin-bottom: var(--space-large-px);
+}
+
+.Game-playerBoard {
+  width: 250px;
+  height: 500px;
+}
+
+.Game-opponentBoard {
+  margin-right: var(--space-medium-px);
+  height: 300px;
+  width: 150px;
+}
+
+.Game-playerBoard,
+.Game-opponentBoard {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.Game-playerName,
+.Game-opponentName {
+  text-align: center;
 }

@@ -2,6 +2,7 @@ BIN = ./node_modules/.bin
 ELECTRON = $(BIN)/electron
 DUO = $(BIN)/duo
 CHOKIDAR = $(BIN)/chokidar
+SERVER = $(BIN)/http-server
 
 all: node_modules mkdir
 
@@ -14,10 +15,13 @@ mkdir:
 node_modules:
 	npm install
 
+server:
+	@$(SERVER)
+
 lint:
 	@$(BIN)/standard lib/**/*.js
 
-build: node_modules lint
+build: node_modules
 	@$(BIN)/duo --use ./duo-plugins.js lib/index.{js,css}
 	# @$(BIN)/electron-packager . Game --ignore=node_modules/electron-prebuilt components lib -prune
 

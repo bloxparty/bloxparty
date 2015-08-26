@@ -1,6 +1,6 @@
 .Games {
   display: inline-block;
-  width: 300px;
+  width: 100%;
 }
 
 .Games-head {
@@ -11,9 +11,8 @@
   border-radius: var(--border-radius);
   border: 1px solid #000;
   background: var(--color-dark-gray);
-  min-height: 300px;
-  max-height: 300px;
   overflow-y: auto;
+  width: 100%;
 }
 
 .Games-list {
@@ -25,11 +24,31 @@
   color: #0080AB;
   cursor: pointer;
   padding: var(--space-medium-px);
-  text-align: center;
+  width: 100%;
+}
+
+.Games-tableHead th {
+  text-align: left;
+  padding: var(--space-medium-px);
+
+}
+
+.Games-listItem.is-Full {
+  color: #999;
 }
 
 .Games-listItem:hover {
   background: var(--color-dark-gray-alt);
+}
+
+.Games-name {
+  display: inline-block;
+  padding: var(--space-medium-px);
+  width: 200px;
+}
+
+.Games-players {
+  padding: var(--space-medium-px);
 }
 
 .Games-name:hover {

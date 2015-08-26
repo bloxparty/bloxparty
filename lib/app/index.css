@@ -1,0 +1,8 @@
+.App {
+  height: 100%;
+}
+
+.App-content {
+  display: inline-block;
+  margin-left: var(--space-large-px);
+}
