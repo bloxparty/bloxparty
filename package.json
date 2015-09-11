@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "electron ./",
     "test": "make test"
   },
   "author": "River Grimm <river.grimm@gmail.com>",
@@ -14,18 +15,18 @@
     "duo": "^0.15.3",
     "duo-babel": "^6.0.0",
     "duo-myth": "^0.2.0",
-    "electron-packager": "^3.3.0",
-    "electron-prebuilt": "^0.25.3",
+    "electron-packager": "^5.1.0",
+    "electron-prebuilt": "^0.32.1",
     "http-server": "^0.8.0",
-    "mocha": "^2.2.5",
+    "mocha": "^2.3.2",
     "myth": "^1.5.0",
-    "socket.io-client": "^1.3.5",
-    "standard": "^4.2.0"
+    "socket.io-client": "^1.3.6",
+    "standard": "^5.2.2",
+    "suitcss": "^0.6.0"
   },
   "dependencies": {
-    "cuid": "^1.2.5",
-    "http": "0.0.0",
-    "moniker": "^0.1.2",
-    "socket.io": "^1.3.5"
+    "cuid": "*",
+    "moniker": "*",
+    "socket.io": "*"
   }
 }

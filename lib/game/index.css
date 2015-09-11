@@ -1,4 +1,5 @@
 @import './lib/canvas';
+@import './lib/opponent';
 @import './lib/preview';
 
 .Game {
@@ -20,6 +21,14 @@
   margin-bottom: var(--space-large-px);
 }
 
+.Game-playerCanvasContainer .Canvas-container {
+  height: 500px;
+}
+
+.Game-opponentCanvasContainer .Canvas-container {
+  height: 300px;
+}
+
 .Game-playerBoard {
   width: 250px;
   height: 500px;
@@ -35,6 +44,11 @@
 .Game-opponentBoard {
   display: inline-block;
   vertical-align: top;
+}
+
+.Game-playerLevel,
+.Game-activeLevel {
+  display: block;
 }
 
 .Game-playerName,

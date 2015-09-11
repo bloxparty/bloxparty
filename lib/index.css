@@ -29,8 +29,9 @@ html {
 }
 
 body {
-  background-color: var(--color-gray);
+  background-color: #06151C;
   color: var(--color-silver);
+  font-family: 'PT Sans', sans-serif;
   height: 100%;
 }
 

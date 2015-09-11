@@ -1,25 +1,25 @@
-.Canvas-container {
+.OpponentCanvas-container {
   border: 1px solid #0080AB;
   background: #00202B;
-  width: 250px;
-  height: 500px;
+  width: 150px;
+  height: 300px;
   position: relative;
 }
 
-.Canvas-grid {
+.OpponentCanvas-grid {
   /*top: 0;
   left: 0;*/
-  width: 250px;
-  height: 500px;
+  width: 150px;
+  height: 300px;
   position: absolute;
   z-index: 1;
 }
 
-.Canvas-shape {
+.OpponentCanvas-shape {
   /*top: 0;
   left: 0;*/
-  width: 250px;
-  height: 500px;
+  width: 150px;
+  height: 300px;
   position: absolute;
   z-index: 5;
 }
