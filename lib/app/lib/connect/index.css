@@ -33,3 +33,17 @@
   border: 0;
   width: 85px;
 }
+
+.FormField-label,
+.FormField-controls {
+  display: inline-block;
+}
+
+.FormField-label {
+  width: 100px;
+}
+
+.FormField-controls {
+  margin-bottom: var(--space-medium-px);
+  background: #111;
+}

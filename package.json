@@ -22,7 +22,8 @@
     "myth": "^1.5.0",
     "socket.io-client": "^1.3.6",
     "standard": "^5.2.2",
-    "suitcss": "^0.6.0"
+    "suitcss": "^0.6.0",
+    "suitcss-preprocessor": "^0.4.0"
   },
   "dependencies": {
     "cuid": "*",
