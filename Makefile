@@ -22,7 +22,7 @@ lint:
 	@$(BIN)/standard lib/**/*.js
 
 build: node_modules
-	@$(BIN)/duo --use ./duo-plugins.js lib/index.{js,css}
+	node build.js
 	# @$(BIN)/electron-packager . Game --ignore=node_modules/electron-prebuilt components lib -prune
 
 clean:
