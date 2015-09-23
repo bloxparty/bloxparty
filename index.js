@@ -1,11 +1,26 @@
-var app = require('app')
-var BrowserWindow = require('browser-window')
+'use strict'
+const app = require('app')
+const BrowserWindow = require('browser-window')
 
-app.on('ready', function () {
-  var mainWindow = new BrowserWindow({
-    width: 800,
-    height: 600
+require('electron-debug')()
+
+let mainWindow
+
+function onClosed () {
+  mainWindow = null
+}
+
+function createMainWindow () {
+  const win = new BrowserWindow({
+    width: 1200,
+    height: 800,
+    title: 'Blox Party'
   })
-  mainWindow.loadUrl('file://' + __dirname + '/index.html')
-  mainWindow.openDevTools()
-})
+  win.loadUrl('file://' + __dirname + '/index.html')
+  win.on('closed', onClosed)
+  return win
+}
+
+app.on('window-all-closed', () => {if (process.platform !== 'darwin') app.quit()})
+app.on('activate-with-no-open-windows', () => {if (!mainWindow) mainWindow = createMainWindow()})
+app.on('ready', () => {mainWindow = createMainWindow()})
