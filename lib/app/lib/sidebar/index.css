@@ -1,44 +1,37 @@
 .Sidebar {
-  background-color: rgb(10, 10, 15);
+  background-color: var(--color-black);
   float: left;
   height: 100%;
   width: 175px;
 }
 
 .Sidebar-title {
-  color: ;
   padding: var(--space-medium-px);
-  /*text-align: center;*/
   text-transform: uppercase;
 }
 
-.Sidebar-content {
-}
+.Sidebar-content {}
 
 .Sidebar-listGroupTitle {
-  color: #999;
+  border-bottom: 1px solid var(--color-dark-gray);
+  color: var(--color-medium-gray);
   margin: var(--space-small-px) var(--space-medium-px);
   margin-top: var(--space-large-px);
   width: 155px;
-  border-bottom: 1px solid #333
 }
 
 .Sidebar-listItem {
-  color: #0080AB;
+  color: var(--color-medium-blue);
   cursor: pointer;
   margin: var(--space-small-px) var(--space-medium-px);
 }
 
 .Sidebar-listItem:hover {
-  /*background: var(--color-dark-gray-alt);*/
-}
-
-.Sidebar-listItem:hover {
-  color: #61CAED;
+  color: var(--color-orange);
 }
 
 .Sidebar-listItem.is-disabled {
-  color: #555;
+  color: var(--color-silver);
   cursor: default;
 }
 

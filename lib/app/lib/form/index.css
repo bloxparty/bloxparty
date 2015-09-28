@@ -1,0 +1,31 @@
+input {
+  background-color: var(--color-dark-blue);
+  border: 1px solid var(--color-medium-blue);
+  color: var(--color-light-blue);
+  outline: 0;
+  padding: 5px;
+  transition: border 0.5s;
+}
+
+input:focus {
+  outline: 0;
+  border: 1px solid var(--color-orange);
+  color: var(--color-orange)
+}
+
+input::selection {
+  background: var(--color-medium-blue);
+}
+
+.FormField-label,
+.FormField-controls {
+  display: inline-block;
+}
+
+.FormField-label {
+  width: 100px;
+}
+
+.FormField-controls {
+  margin-bottom: var(--space-medium-px);
+}

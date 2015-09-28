@@ -1,18 +1,13 @@
 .Connect {
-  /*margin: 100px auto;*/
-  /*text-align: center;*/
-  width: 325px;
-  /*border: 2px solid rgb(30, 30, 30);*/
   padding: 25px;
 }
 
 .Connect-title {
-  /*margin-bottom: 25px;*/
+  font-weight: normal;
 }
 
 .Connect-label {
   display: inline-block;
-  /*text-align: right;*/
   width: 100px;
 }
 
@@ -22,28 +17,6 @@
   margin-bottom: var(--space-large-px);
 }
 
-.Connect-input {
-  margin-bottom: var(--space-small-px);
-  margin-left: var(--space-small-px);
-}
-
-.Connect-button {
-  margin-top: var(--space-large-px);
-  background-color: rgb(9, 160, 122);
-  border: 0;
-  width: 85px;
-}
-
-.FormField-label,
-.FormField-controls {
-  display: inline-block;
-}
-
-.FormField-label {
-  width: 100px;
-}
-
-.FormField-controls {
-  margin-bottom: var(--space-medium-px);
-  background: #111;
+.Connect .FormField-controls input {
+  width:200px;
 }

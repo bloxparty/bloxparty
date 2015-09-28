@@ -12,5 +12,13 @@ A [Blox Party server](https://github.com/kvnneff/bloxparty-server) is required t
 
 List of public servers:
 
-- `bloxparty.kvnneff.me`
+- `bloxparty-server.kvnneff.me`
 
+## Dev
+
+**Commands:**
+
+* Init: `npm install`
+* Run: `npm start`
+* Build UI: `npm run build-ui`
+* Build App: `npm run build`
