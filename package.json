@@ -57,6 +57,7 @@
     "check": "npm run lint && fixpack",
     "lint": "standard ./lib/**/*.js",
     "start": "electron .",
+    "server": "http-server ./",
     "test": "",
     "watch": "npm run watch-css & npm run watch-js",
     "watch-css": "chokidar './lib/**/*.css' -c 'npm run build-css'",
