@@ -15,7 +15,6 @@
     "deku": "^0.5.5",
     "deku-form": "^1.1.4",
     "electron-debug": "^0.2.1",
-    "local-storage": "^1.4.2",
     "moniker": "^0.1.2",
     "query-string": "^2.4.1",
     "socket.io-client": "git+https://github.com/socketio/socket.io-client.git",
@@ -51,7 +50,7 @@
   "productName": "BloxParty",
   "repository": "https://github.com/kvnneff/bloxparty.git",
   "scripts": {
-    "build": "electron-packager . $npm_package_productName --out=dist --ignore='^/dist$' --prune --asar --all --version=$npm_package_electronVersion",
+    "build": "electron-packager . $npm_package_productName --out=dist --ignore='^/dist$' --ignore='node_modules/(bloxparty-board|bus|component-clone|component-emitter|cuid|deku|deku-form|moniker|query-string|socket.io-client|virtual-element|wayfarer)' --prune --asar --all --version=$npm_package_electronVersion",
     "build-css": "duo --use duo-myth lib/index.css",
     "build-js": "browserify lib/index.js -t [babelify --ignore socket.io-client --ignore electron-debug] --outfile build/lib/index.js",
     "build-ui": "npm run build-js & npm run build-css",

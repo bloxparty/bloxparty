@@ -18,5 +18,9 @@ List of public servers:
 
 * Init: `npm install`
 * Run: `npm start`
-* Build UI: `npm run build-ui`
+* Build JS & CSS: `npm run build-ui`
 * Build App: `npm run build`
+
+## License
+
+MIT
