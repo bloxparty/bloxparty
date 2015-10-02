@@ -1,0 +1,10 @@
+.GamePlayerPreview {
+  vertical-align: top;
+}
+
+.GamePlayerPreview-head {
+  text-align: center;
+}
+.GamePlayerPreview-canvas {
+  border: 1px solid var(--color-medium-blue);
+}

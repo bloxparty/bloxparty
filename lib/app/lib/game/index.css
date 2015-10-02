@@ -1,57 +1,19 @@
-@import './lib/canvas';
 @import './lib/opponent';
-@import './lib/preview';
+@import './lib/player';
 
-.Game {
-}
+.Game {}
 
-.Game-playerControls {
-  display: inline-block;
-  padding: var(--space-large-px);
-  vertical-align: top;
-}
-
-.Game-playerCanvasContainer,
-.Game-opponentCanvasContainer,
-.Game-opponents {
+.Game-player {
   display: inline-block;
 }
 
-.Game-gameRoomName {
+.Game-roomName {
   margin-bottom: var(--space-large-px);
 }
 
-.Game-playerCanvasContainer .Canvas-container {
-  height: 500px;
-}
-
-.Game-opponentCanvasContainer .Canvas-container {
-  height: 300px;
-}
-
-.Game-playerBoard {
-  width: 250px;
-  height: 500px;
-}
-
-.Game-opponentBoard {
-  margin-right: var(--space-medium-px);
-  height: 300px;
-  width: 150px;
-}
-
-.Game-playerBoard,
-.Game-opponentBoard {
+.Game-opponents {
   display: inline-block;
   vertical-align: top;
-}
-
-.Game-playerLevel,
-.Game-activeLevel {
-  display: block;
-}
-
-.Game-playerName,
-.Game-opponentName {
-  text-align: center;
+  margin-left: var(--space-medium-px);
+  width:325px;
 }

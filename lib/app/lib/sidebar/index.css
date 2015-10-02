@@ -24,6 +24,7 @@
   color: var(--color-medium-blue);
   cursor: pointer;
   margin: var(--space-small-px) var(--space-medium-px);
+  transition: color 0.3s;
 }
 
 .Sidebar-listItem:hover {

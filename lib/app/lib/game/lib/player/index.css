@@ -1,0 +1,25 @@
+@import "./lib/preview";
+@import "./lib/canvas";
+@import "./lib/status";
+
+.GamePlayer {
+  vertical-align: top;
+}
+
+.GamePlayer-status {}
+
+.GamePlayer-canvas {}
+
+.GamePlayer-preview {
+}
+
+.GamePlayer-statusColumn {
+  margin-left: var(--space-medium-px);
+}
+
+.GamePlayer-canvas,
+.GamePlayer-statusColumn {
+  display: inline-block;
+  vertical-align: top;
+}
+

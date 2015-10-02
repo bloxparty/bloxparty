@@ -3,13 +3,9 @@
   width: 100%;
 }
 
-.Games-head {
-  color: rgb(230, 230, 230);
-}
+.Games-head {}
 
 .Games-listContainer {
-  border-radius: var(--border-radius);
-  border: 1px solid #000;
   background: var(--color-dark-gray);
   overflow-y: auto;
   width: 100%;
@@ -20,37 +16,33 @@
 }
 
 .Games-listItem {
-  border-bottom: 1px solid #000;
-  color: #0080AB;
+  background: var(--color-black);
+  color: var(--color-medium-blue);
   cursor: pointer;
   padding: var(--space-medium-px);
+  transition: background 0.3s, color 0.3s;
   width: 100%;
 }
 
 .Games-tableHead th {
   text-align: left;
   padding: var(--space-medium-px);
-
 }
 
 .Games-listItem.is-Full {
-  color: #999;
+  color: var(--color-medium-gray);
 }
 
 .Games-listItem:hover {
   background: var(--color-dark-gray-alt);
+  color: var(--color-orange);
 }
 
 .Games-name {
   display: inline-block;
   padding: var(--space-medium-px);
-  width: 200px;
 }
 
 .Games-players {
   padding: var(--space-medium-px);
-}
-
-.Games-name:hover {
-  color: #61CAED;
 }

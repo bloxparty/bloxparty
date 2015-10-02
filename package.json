@@ -1,7 +1,7 @@
 {
   "name": "bloxparty",
   "description": "Multiplayer Tetris built with Electron",
-  "version": "1.0.0-alpha",
+  "version": "1.0.0",
   "author": "Kevin Neff <kvnneff@gmail.com>",
   "bugs": {
     "url": "https://github.com/kvnneff/bloxparty/issues"
@@ -15,6 +15,7 @@
     "deku": "^0.5.5",
     "deku-form": "^1.1.4",
     "electron-debug": "^0.2.1",
+    "local-storage": "^1.4.2",
     "moniker": "^0.1.2",
     "query-string": "^2.4.1",
     "socket.io-client": "git+https://github.com/socketio/socket.io-client.git",
@@ -56,8 +57,8 @@
     "build-ui": "npm run build-js & npm run build-css",
     "check": "npm run lint && fixpack",
     "lint": "standard ./lib/**/*.js",
-    "start": "electron .",
     "server": "http-server ./",
+    "start": "electron .",
     "test": "",
     "watch": "npm run watch-css & npm run watch-js",
     "watch-css": "chokidar './lib/**/*.css' -c 'npm run build-css'",

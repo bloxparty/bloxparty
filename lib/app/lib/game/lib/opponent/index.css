@@ -1,25 +1,25 @@
-.OpponentCanvas-container {
+.GameOpponent {
+  vertical-align: top;
+}
+
+.GameOpponent-canvasContainer {
   border: 1px solid #0080AB;
   background: #00202B;
-  width: 150px;
-  height: 300px;
+  width: 100px;
+  height: 200px;
   position: relative;
 }
 
-.OpponentCanvas-grid {
-  /*top: 0;
-  left: 0;*/
-  width: 150px;
-  height: 300px;
+.GameOpponent-canvas {
+  width: 100px;
+  height: 200px;
   position: absolute;
+}
+
+.GameOpponent-canvas.is-grid {
   z-index: 1;
 }
 
-.OpponentCanvas-shape {
-  /*top: 0;
-  left: 0;*/
-  width: 150px;
-  height: 300px;
-  position: absolute;
+.GameOpponent-canvas.is-shape {
   z-index: 5;
 }
