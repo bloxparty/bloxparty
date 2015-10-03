@@ -25,6 +25,8 @@ This game is meant to eventually be a clone of [TetriNET](http://tetrinet.info/)
 
 ## Game Mechanics
 
+Each game room can support up to six players, with the first player having the ability to start the game.
+
 Send garbage lines to your opponents when you clear lines:
 
 * Clear 2 lines, add 1 garbage line to all opponents
