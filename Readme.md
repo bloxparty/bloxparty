@@ -1,12 +1,8 @@
-# Blox Party
+# Blox Party [![Build Status](https://travis-ci.org/kvnneff/bloxparty.svg?branch=master)](https://travis-ci.org/kvnneff/bloxparty)
 
 A multiplayer Tetris game built with [Electron](http://electron.atom.io/).
 
 [Download the latest release](https://github.com/kvnneff/bloxparty/releases)
-
-[![NPM](https://nodei.co/npm/bloxparty.png)](https://nodei.co/npm/bloxparty/)
-
-[![Build Status](https://travis-ci.org/kvnneff/bloxparty.svg?branch=master)](https://travis-ci.org/kvnneff/bloxparty)
 
 A [Blox Party server](https://github.com/kvnneff/bloxparty-server) is required to host games.
 
