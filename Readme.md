@@ -2,7 +2,7 @@
 
 A multiplayer Tetris game built with [Electron](http://electron.atom.io/).
 
-[Download the latest release](https://github.com/kvnneff/bloxparty/releases)
+[Download the latest release](https://github.com/kvnneff/bloxparty/releases) (The Windows and Linux releases have not been tested)
 
 A [Blox Party server](https://github.com/kvnneff/bloxparty-server) is required to host games.
 
