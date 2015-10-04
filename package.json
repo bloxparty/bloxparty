@@ -21,9 +21,12 @@
     "wayfarer": "^5.0.1"
   },
   "devDependencies": {
+    "assert-element": "dekujs/assert-element",
     "babelify": "^6.3.0",
     "browserify": "^11.1.0",
+    "browserify-test": "^2.0.0",
     "chokidar-cli": "^1.0.1",
+    "component-mock": "0.0.2",
     "dependency-check": "^2.5.1",
     "duo": "^0.15.3",
     "duo-babel": "^6.0.0",
@@ -33,6 +36,7 @@
     "fixpack": "^2.2.0",
     "http-server": "^0.8.0",
     "mocha": "^2.3.2",
+    "mochify": "^2.13.0",
     "myth": "^1.5.0",
     "standard": "^5.2.2"
   },
@@ -53,11 +57,10 @@
     "build-css": "duo --use duo-myth lib/index.css",
     "build-js": "browserify lib/index.js -t [babelify --ignore socket.io-client --ignore electron-debug] --outfile build/lib/index.js",
     "build-ui": "npm run build-js & npm run build-css",
-    "check": "npm run lint && fixpack",
-    "lint": "standard ./lib/**/*.js",
+    "lint": "standard ./lib/**/*.js && fixpack",
     "server": "http-server ./",
     "start": "electron .",
-    "test": "",
+    "test": "mochify --transform [babelify --ignore socket.io-client --ignore electron-debug] test/index.js",
     "watch": "npm run watch-css & npm run watch-js",
     "watch-css": "chokidar './lib/**/*.css' -c 'npm run build-css'",
     "watch-js": "chokidar './lib/**/*.js' -c 'npm run build-js'"
