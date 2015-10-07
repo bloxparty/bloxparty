@@ -34,6 +34,9 @@ app.on('activate-with-no-open-windows', () => {
 })
 
 app.on('ready', () => {
-  Menu.setApplicationMenu(Menu.buildFromTemplate(menuTemplate))
+  // Build menu only for OSX
+  if (Menu.sendActionToFirstResponder) {
+    Menu.setApplicationMenu(Menu.buildFromTemplate(menuTemplate))
+  }
   mainWindow = createMainWindow()
 })
