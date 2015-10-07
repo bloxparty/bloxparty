@@ -1,35 +1,35 @@
 module.exports = [
   {
-    "label": "Blox Party",
-    "submenu": [
+    'label': 'Blox Party',
+    'submenu': [
       {
-        "label": "About Blox Party",
-        "selector": "orderFrontStandardAboutPanel:"
+        'label': 'About Blox Party',
+        'selector': 'orderFrontStandardAboutPanel:'
       },
       {
-        "type": "separator"
+        'type': 'separator'
       },
       {
-        "label": "Hide Blox Party",
-        "accelerator": "CmdOrCtrl+H",
-        "selector": "hide:"
+        'label': 'Hide Blox Party',
+        'accelerator': 'CmdOrCtrl+H',
+        'selector': 'hide:'
       },
       {
-        "label": "Hide Others",
-        "accelerator": "CmdOrCtrl+Shift+H",
-        "selector": "hideOtherApplications:"
+        'label': 'Hide Others',
+        'accelerator': 'CmdOrCtrl+Shift+H',
+        'selector': 'hideOtherApplications:'
       },
       {
-        "label": "Show All",
-        "selector": "unhideAllApplications:"
+        'label': 'Show All',
+        'selector': 'unhideAllApplications:'
       },
       {
-        "type": "separator"
+        'type': 'separator'
       },
       {
-        "label": "Quit",
-        "accelerator": "CmdOrCtrl+Q",
-        "selector": "terminate:"
+        'label': 'Quit',
+        'accelerator': 'CmdOrCtrl+Q',
+        'selector': 'terminate:'
       }
     ]
   }
