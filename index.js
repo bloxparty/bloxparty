@@ -17,7 +17,7 @@ function createMainWindow () {
     width: 920,
     height: 600,
     center: true,
-    "standard-window": false,
+    'standard-window': false,
     title: 'Blox Party'
   })
   win.loadUrl('file://' + __dirname + '/index.html')
@@ -34,6 +34,6 @@ app.on('activate-with-no-open-windows', () => {
 })
 
 app.on('ready', () => {
-  Menu.setApplicationMenu(Menu.buildFromTemplate(menuTemplate));
+  Menu.setApplicationMenu(Menu.buildFromTemplate(menuTemplate))
   mainWindow = createMainWindow()
 })
