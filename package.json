@@ -15,6 +15,7 @@
     "deku": "^0.5.5",
     "deku-form": "^1.1.4",
     "electron-debug": "^0.2.1",
+    "localstorage-ns": "^1.0.2",
     "query-string": "^2.4.1",
     "socket.io-client": "git+https://github.com/socketio/socket.io-client.git",
     "virtual-element": "^1.2.0",
