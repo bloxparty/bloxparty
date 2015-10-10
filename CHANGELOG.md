@@ -1,5 +1,13 @@
 # Change Log
 
+## [Unreleased](https://github.com/kvnneff/bloxparty/tree/HEAD)
+
+[Full Changelog](https://github.com/kvnneff/bloxparty/compare/1.0.1...HEAD)
+
+**Closed issues:**
+
+- Select menubar option [\#2](https://github.com/kvnneff/bloxparty/issues/2)
+
 ## [1.0.1](https://github.com/kvnneff/bloxparty/tree/1.0.1) (2015-10-03)
 [Full Changelog](https://github.com/kvnneff/bloxparty/compare/1.0.0...1.0.1)
 

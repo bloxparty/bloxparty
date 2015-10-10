@@ -1,8 +1,8 @@
-@import 'suitcss/base';
-@import 'suitcss/components-button';
-@import 'suitcss/utils-size';
-@import 'suitcss/utils-align';
-@import 'suitcss/components-grid';
+@import 'suitcss-base';
+@import 'suitcss-components-button';
+@import 'suitcss-utils-size';
+@import 'suitcss-utils-align';
+@import 'suitcss-components-grid';
 @import "./app";
 
 :root {
