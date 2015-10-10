@@ -1,10 +1,3 @@
-@import 'suitcss-base';
-@import 'suitcss-components-button';
-@import 'suitcss-utils-size';
-@import 'suitcss-utils-align';
-@import 'suitcss-components-grid';
-@import "./app";
-
 :root {
   --space-small-px: 5px;
   --space-medium-px: 10px;
@@ -30,6 +23,13 @@
   --color-orange: rgb(255, 187, 0);
   --color-pink: rgb(207, 0, 83);
 }
+
+@import 'suitcss-base';
+@import 'suitcss-components-button';
+@import 'suitcss-utils-size';
+@import 'suitcss-utils-align';
+@import 'suitcss-components-grid';
+@import "./app";
 
 @font-face {
   font-family: 'PT Sans';
