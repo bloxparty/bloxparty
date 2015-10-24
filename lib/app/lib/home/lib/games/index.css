@@ -3,11 +3,36 @@
   width: 100%;
 }
 
+.Games .Box-content--no-padding {
+  max-height: 350px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.Games-table {
+  width: 100%;
+}
+
+.Games-table thead {}
+
+.Games-table tbody {}
+
+.Games-table th,
+.Games-table td {
+  padding: var(--space-medium-px);
+  text-align: left;
+}
+
 .Games-head {}
+
+.Games-noGames {
+  text-align: center;
+}
 
 .Games-listContainer {
   background: var(--color-dark-gray);
-  overflow-y: auto;
+  /*overflow-y: scroll;
+  max-height: 100px;*/
   width: 100%;
 }
 
@@ -16,12 +41,16 @@
 }
 
 .Games-listItem {
-  background: var(--color-black);
+  /*background: var(--color-dark-gray);*/
   color: var(--color-medium-blue);
   cursor: pointer;
   padding: var(--space-medium-px);
   transition: background 0.3s, color 0.3s;
   width: 100%;
+}
+
+.Games-tableHead {
+  /*background-color: var(--color-dark-gray);*/
 }
 
 .Games-tableHead th {
@@ -34,15 +63,14 @@
 }
 
 .Games-listItem:hover {
-  background: var(--color-dark-gray-alt);
+  background: var(--color-dark-blue);
   color: var(--color-orange);
 }
 
 .Games-name {
-  display: inline-block;
-  padding: var(--space-medium-px);
+  /*padding: var(--space-medium-px);*/
 }
 
 .Games-players {
-  padding: var(--space-medium-px);
+  /*padding: var(--space-medium-px);*/
 }

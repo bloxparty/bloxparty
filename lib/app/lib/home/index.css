@@ -1,12 +1,31 @@
 @import './lib/games';
 
 .Home {
-  margin: 0px auto;
-  padding: var(--space-page-padding);
-  width: 600px;
+  width: 100%;
+}
+
+.Home-statsContainer {
+  display: flex;
+  width: 100%;
 }
 
 .Home-newGameButton {
   display: block;
   margin-top: var(--space-large-px);
+}
+
+.Home-gamesContainer,
+.Home-playersContainer {
+  /*display: inline-block;*/
+  vertical-align: top;
+}
+
+.Home-playersContainer {
+  width: 200px;
+  margin-left: var(--space-large-px);
+}
+
+.Home-gamesContainer {
+  min-width: 350px;
+  flex: 1;
 }

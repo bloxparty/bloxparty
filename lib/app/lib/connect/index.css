@@ -1,14 +1,11 @@
 .Connect {
   padding: var(--space-large-px);
+  text-align: center;
 }
 
-.Connect-title {
-  font-weight: normal;
-}
-
-.Connect-label {
+.Connect-boxContainer {
   display: inline-block;
-  width: 100px;
+  width: 300px;
 }
 
 .Connect-error {
@@ -18,5 +15,11 @@
 }
 
 .Connect .FormField-controls input {
-  width:200px;
+  width: 200px;
+  padding: 5px;
+}
+
+.Connect-button {
+  width: 212px;
+  padding: 5px;
 }

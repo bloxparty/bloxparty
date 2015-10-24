@@ -1,0 +1,14 @@
+.Topbar {
+  background: #010726;
+  border-bottom: 1px solid #888;
+  padding: var(--space-medium-px);
+  -webkit-app-region: drag;
+}
+
+.Topbar-title {
+  margin-left: var(--space-large-px);
+  color: var(--color-silver);
+  font-size: 18px;
+  /*font-weight: bold;*/
+  text-transform: uppercase;
+}

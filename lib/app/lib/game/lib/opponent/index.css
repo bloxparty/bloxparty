@@ -1,12 +1,14 @@
 .GameOpponent {
   vertical-align: top;
+  flex: 0 0 100px;
+  /*width: 100px;*/
+  height: 200px;
 }
 
 .GameOpponent-canvasContainer {
-  border: 1px solid #0080AB;
-  background: #00202B;
   width: 100px;
   height: 200px;
+  background: rgb(0, 19, 39);
   position: relative;
 }
 

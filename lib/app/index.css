@@ -1,21 +1,10 @@
+@import './lib/button';
+@import './lib/box';
 @import './lib/form';
-@import './lib/sidebar';
+@import './lib/topbar';
 @import './lib/connect';
 @import './lib/home';
 @import './lib/game';
-
-.Button {
-  background-color: var(--color-darker-blue);
-  color: var(--color-royal-blue);
-  transition: color 0.3s border 0.3s;
-}
-
-.Button[type="submit"]:focus,
-.Button[type="submit"]:hover {
-  outline: 0;
-  color: var(--color-orange);
-  border: 1px solid var(--color-orange);
-}
 
 #app {
   width: 100%;
@@ -27,6 +16,6 @@
 }
 
 .App-content {
-  display: inline-block;
-  margin-left: var(--space-large-px);
+  padding: var(--space-page-padding);
+  -webkit-app-region: no-drag;
 }

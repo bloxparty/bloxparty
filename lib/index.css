@@ -9,11 +9,11 @@
   --border-radius: 3px;
 
   --color-error-red: rgb(239, 72, 54);
-  --color-black: rgb(10, 10, 15);
+  --color-black: rgb(25, 25, 25);
   --color-gray: rgb(40, 45, 45);
   --color-darker-blue: rgb(6, 21, 28);
-  --color-dark-blue: rgb(0, 32, 43);
-  --color-medium-blue: rgb(9, 122, 160);
+  --color-dark-blue: rgb(0, 32, 90);
+  --color-medium-blue: rgb(21, 114, 211);
   --color-light-blue: rgb(150, 255, 255);
   --color-royal-blue: rgb(34, 167, 240);
   --color-dark-gray: rgb(20, 25, 25);
@@ -28,7 +28,7 @@
 @import 'suitcss-components-button';
 @import 'suitcss-utils-size';
 @import 'suitcss-utils-align';
-@import 'suitcss-components-grid';
+@import './app/lib/grid';
 @import "./app";
 
 @font-face {
@@ -51,7 +51,8 @@ body {
 }
 
 body {
-  background-color: var(--color-darker-blue);
+  /*background-color: #010726;*/
+  background: linear-gradient(to top, rgb(1,5,20) 0%, rgb(23,28,60) 100%);
   color: var(--color-silver);
   font-family: 'PT Sans', sans-serif;
 }

@@ -1,25 +1,51 @@
 @import "./lib/preview";
 @import "./lib/canvas";
 @import "./lib/status";
+@import "./lib/controls";
 
 .GamePlayer {
   vertical-align: top;
 }
 
+.GamePlayer-name {
+  background-color: rgb(15, 44, 130);
+  padding: var(--space-small-px);
+  text-align: center;
+}
+
 .GamePlayer-status {}
 
-.GamePlayer-canvas {}
+.GamePlayer-canvas {
+  /*position: relative;*/
+  /*height: 100%;*/
+}
 
-.GamePlayer-preview {
+.GamePlayer-preview {}
+
+.GamePlayer-canvasColumn {
+  display: table-cell;
 }
 
 .GamePlayer-statusColumn {
-  margin-left: var(--space-medium-px);
+  display: table-cell;
+  padding-left: var(--space-large-px);
+  width: 125px;
+  height: 100%;
 }
+
+.GamePlayer-statusColumnTop {
+  position: absolute;
+  top: 0;
+}
+
+.GamePlayer-statusColumnBottom {
+  position: absolute;
+  bottom: 0;
+}
+
 
 .GamePlayer-canvas,
 .GamePlayer-statusColumn {
-  display: inline-block;
+  position: relative;
   vertical-align: top;
 }
-

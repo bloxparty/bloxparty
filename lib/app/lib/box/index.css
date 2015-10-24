@@ -1,0 +1,49 @@
+.Box {
+  border: 1px solid rgb(17, 95, 196);
+  border-radius: var(--border-radius);
+  display: inline-block;
+  width: 100%;
+}
+
+.Box-head {
+  /*background-color: rgb(27, 105, 206);*/
+  background: linear-gradient(to bottom, rgb(1, 70, 171) 0%, rgb(17, 95, 196) 100%);
+  color: var(--color-silver);
+  padding: var(--space-medium-px);
+}
+
+.Box-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.Box-controls {
+  float: right;
+}
+
+.Box-button {
+  padding: 3px 10px 3px 10px;
+  /*background: linear-gradient(to bottom, rgb(1, 70, 171) 0%, rgb(17, 95, 196) 100%);*/
+  background: var(--color-medium-blue);
+  border-radius: 0px;
+  box-shadow: rgba(255, 255, 255, 0.15) 0 1px 0px 0px inset,
+  rgba(255, 255, 255, 0.05) 0 1px 0px 1px inset,
+  rgba(0, 0, 0, 0.7) 0 1px 2px 0px,
+  rgba(9, 9, 9, 0.6) 0 1px 2px 0px;
+  margin: 0;
+}
+
+.Box-button:hover {
+  background: var(--color-medium-blue);
+  box-shadow: rgba(255, 255, 255, 0.05) 0 1px 0px 0px inset,
+  rgba(255, 255, 255, 0.02) 0 1px 0px 1px inset,
+  rgba(9, 9, 9, 0.5) 0 1px 2px 1px;
+}
+
+.Box-content {
+  padding: var(--space-large-px);
+}
+
+.Box-content--no-padding {
+  padding:0;
+}

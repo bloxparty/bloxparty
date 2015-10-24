@@ -18,6 +18,7 @@ function createMainWindow () {
     height: 600,
     center: true,
     'standard-window': false,
+    frame: false,
     title: 'Blox Party'
   })
   win.loadUrl('file://' + __dirname + '/index.html')
