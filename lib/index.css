@@ -22,6 +22,7 @@
   --color-silver: rgb(245, 245, 245);
   --color-orange: rgb(255, 187, 0);
   --color-pink: rgb(207, 0, 83);
+  --color-green: rgb(0, 156, 71);
 }
 
 @import 'suitcss-base';

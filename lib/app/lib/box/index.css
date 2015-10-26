@@ -34,7 +34,7 @@
 }
 
 .Box-button:hover {
-  background: var(--color-medium-blue);
+  background: color(var(--color-medium-blue) shade(10%));
   box-shadow: rgba(255, 255, 255, 0.05) 0 1px 0px 0px inset,
   rgba(255, 255, 255, 0.02) 0 1px 0px 1px inset,
   rgba(9, 9, 9, 0.5) 0 1px 2px 1px;

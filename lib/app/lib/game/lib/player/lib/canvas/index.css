@@ -1,7 +1,5 @@
 .GamePlayerCanvas {
-  /*border: 1px solid var(--color-medium-blue);*/
   background: rgb(0, 19, 39);
-  display: inline-block;
   width: 250px;
   height: 500px;
   position: relative;
@@ -9,14 +7,14 @@
 
 
 .GamePlayerCanvas-canvas.is-grid {
-  width: 250px;
+  width: 252px;
   height: 500px;
   position: absolute;
   z-index: 1;
 }
 
 .GamePlayerCanvas-canvas.is-shape {
-  width: 250px;
+  width: 252px;
   height: 500px;
   position: absolute;
   z-index: 5;

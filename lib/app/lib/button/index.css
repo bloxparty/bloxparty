@@ -1,14 +1,22 @@
 .Button {
-  background-color: rgb(0, 156, 71);
+  background-color: var(--color-dark-blue);
   color: white;
   border: 0;
   margin-top: var(--space-medium-px);
   transition: color 0.3s border 0.3s;
+  box-shadow: rgba(255, 255, 255, 0.15) 0 1px 0px 0px inset,
+  rgba(255, 255, 255, 0.05) 0 1px 0px 1px inset,
+  rgba(0, 0, 0, 0.7) 0 1px 2px 0px,
+  rgba(9, 9, 9, 0.6) 0 1px 2px 0px;
 }
 
 .Button:focus,
 .Button:hover {
   outline: 0;
-  background-color: rgb(0, 176, 91);
+  background-color: var(--color-dark-blue);
+  color: var(--color-orange);
   /*border: 1px solid var(--color-orange);*/
+  box-shadow: rgba(255, 255, 255, 0.05) 0 1px 0px 0px inset,
+  rgba(255, 255, 255, 0.02) 0 1px 0px 1px inset,
+  rgba(9, 9, 9, 0.5) 0 1px 2px 1px;
 }
