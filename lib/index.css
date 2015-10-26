@@ -27,8 +27,6 @@
 
 @import 'suitcss-base';
 @import 'suitcss-components-button';
-@import 'suitcss-utils-size';
-@import 'suitcss-utils-align';
 @import './app/lib/grid';
 @import "./app";
 
