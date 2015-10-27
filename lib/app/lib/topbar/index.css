@@ -9,7 +9,7 @@
   margin-left: var(--space-large-px);
   color: var(--color-silver);
   font-size: 18px;
-  /*font-weight: bold;*/
+  cursor: default;
   text-transform: uppercase;
 }
 
