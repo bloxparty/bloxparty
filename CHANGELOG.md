@@ -6,7 +6,17 @@
 
 **Closed issues:**
 
+- No "Game over" [\#6](https://github.com/kvnneff/bloxparty/issues/6)
+- Log out button don't have any actions [\#5](https://github.com/kvnneff/bloxparty/issues/5)
+- Dev install failed on Windows [\#3](https://github.com/kvnneff/bloxparty/issues/3)
 - Select menubar option [\#2](https://github.com/kvnneff/bloxparty/issues/2)
+
+**Merged pull requests:**
+
+- Change cursor for title in topbar [\#11](https://github.com/kvnneff/bloxparty/pull/11) ([G07cha](https://github.com/G07cha))
+- Add new screenshot [\#8](https://github.com/kvnneff/bloxparty/pull/8) ([G07cha](https://github.com/G07cha))
+- Hide login button on connect screen.  Fixes \#5. [\#7](https://github.com/kvnneff/bloxparty/pull/7) ([kvnneff](https://github.com/kvnneff))
+- Size fix for Windows [\#4](https://github.com/kvnneff/bloxparty/pull/4) ([G07cha](https://github.com/G07cha))
 
 ## [1.0.1](https://github.com/kvnneff/bloxparty/tree/1.0.1) (2015-10-03)
 [Full Changelog](https://github.com/kvnneff/bloxparty/compare/1.0.0...1.0.1)
