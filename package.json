@@ -14,6 +14,7 @@
     "cuid": "*",
     "deku": "^0.5.5",
     "deku-form": "^1.1.4",
+    "electron-builder": "^2.0.2",
     "electron-debug": "^0.2.1",
     "localstorage-ns": "^1.0.2",
     "query-string": "^2.4.1",
@@ -57,14 +58,21 @@
   "productName": "BloxParty",
   "repository": "https://github.com/kvnneff/bloxparty.git",
   "scripts": {
+	"release": "npm i && npm build && npm package",
+	  
+	"package": "npm run package:osx",
+	"package:osx": "electron-builder \"dist/BloxParty-darwin-x64/BloxParty.app\" --platform=osx --out=\"dist/\" --config=packager.json",
+	  
     "build": "electron-packager . $npm_package_productName --out=dist --ignore='^/dist$' --ignore='node_modules/(bloxparty-board|bus|component-clone|component-emitter|cuid|deku|deku-form|moniker|query-string|socket.io-client|virtual-element|wayfarer)' --prune --overwrite --asar --all --version=$npm_package_electronVersion",
     "build-css": "mkdir -p build & postcss -u postcss-copy-assets -u postcss-import -u postcss-cssnext -o build/index.css lib/index.css",
     "build-js": "mkdir -p build & browserify lib/index.js -t [babelify --ignore socket.io-client] --outfile build/index.js",
     "build-ui": "npm run build-css && npm run build-js",
+	  
     "lint": "standard ./lib/**/*.js && fixpack",
     "server": "http-server ./",
     "start": "npm run build-ui && electron .",
     "test": "mochify --transform [babelify --ignore socket.io-client --ignore electron-debug] test/index.js",
+	  
     "watch": "npm run watch-css & npm run watch-js",
     "watch-css": "chokidar './lib/**/*.css' -c 'npm run build-css'",
     "watch-js": "chokidar './lib/**/*.js' -c 'npm run build-js'"
