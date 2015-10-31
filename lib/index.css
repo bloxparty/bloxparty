@@ -8,21 +8,18 @@
 
   --border-radius: 3px;
 
-  --color-error-red: rgb(239, 72, 54);
+  --color-red: rgb(239, 72, 54);
   --color-black: rgb(25, 25, 25);
-  --color-gray: rgb(40, 45, 45);
-  --color-darker-blue: rgb(6, 21, 28);
-  --color-dark-blue: rgb(0, 32, 90);
-  --color-medium-blue: rgb(21, 114, 211);
+  --color-darker-blue: rgb(2, 10, 26);
+  --color-dark-blue: rgb(17, 95, 196);
+  --color-blue: rgb(21, 114, 211);
   --color-light-blue: rgb(150, 255, 255);
-  --color-royal-blue: rgb(34, 167, 240);
+
   --color-dark-gray: rgb(20, 25, 25);
   --color-medium-gray: rgb(150, 150, 150);
   --color-dark-gray-alt: color(var(--color-dark-gray) tint(5%));
   --color-silver: rgb(245, 245, 245);
   --color-orange: rgb(255, 187, 0);
-  --color-pink: rgb(207, 0, 83);
-  --color-green: rgb(0, 156, 71);
 }
 
 @import 'suitcss-base';
@@ -50,8 +47,7 @@ body {
 }
 
 body {
-  /*background-color: #010726;*/
   background: linear-gradient(to top, rgb(1,5,20) 0%, rgb(23,28,60) 100%);
   color: var(--color-silver);
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', 'Helvetica', 'Arial', sans-serif;
 }
