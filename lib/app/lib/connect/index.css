@@ -8,18 +8,17 @@
   width: 300px;
 }
 
+.Connect-button {
+  width: 212px;
+}
+
 .Connect-error {
-  color: var(--color-error-red);
+  color: var(--color-red);
   margin-top: var(--space-large-px);
   margin-bottom: var(--space-large-px);
 }
 
-.Connect .FormField-controls input {
+.Connect input {
   width: 200px;
-  padding: 5px;
-}
-
-.Connect-button {
-  width: 212px;
-  padding: 5px;
+  padding: var(--space-small-px);
 }

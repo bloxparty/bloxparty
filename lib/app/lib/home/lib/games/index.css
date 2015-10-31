@@ -13,8 +13,6 @@
   width: 100%;
 }
 
-.Games-table thead {}
-
 .Games-table tbody {}
 
 .Games-table th,
@@ -31,8 +29,6 @@
 
 .Games-listContainer {
   background: var(--color-dark-gray);
-  /*overflow-y: scroll;
-  max-height: 100px;*/
   width: 100%;
 }
 
@@ -41,17 +37,14 @@
 }
 
 .Games-listItem {
-  /*background: var(--color-dark-gray);*/
-  color: var(--color-medium-blue);
+  color: var(--color-blue);
   cursor: pointer;
   padding: var(--space-medium-px);
   transition: background 0.3s, color 0.3s;
   width: 100%;
 }
 
-.Games-tableHead {
-  /*background-color: var(--color-dark-gray);*/
-}
+.Games-tableHead {}
 
 .Games-tableHead th {
   text-align: left;
@@ -67,10 +60,6 @@
   color: var(--color-orange);
 }
 
-.Games-name {
-  /*padding: var(--space-medium-px);*/
-}
+.Games-name {}
 
-.Games-players {
-  /*padding: var(--space-medium-px);*/
-}
+.Games-players {}
