@@ -21,6 +21,10 @@
   border-radius: 0px;
   background: var(--color-dark-blue);
   padding: 3px 10px 3px 10px;
+  margin: 0px 5px 0px 0px;
+}
+
+.Topbar-button:last-of-type {
   margin: 0;
 }
 
