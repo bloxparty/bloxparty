@@ -1,6 +1,7 @@
 'use strict'
 const app = require('app')
 const BrowserWindow = require('browser-window')
+const ipc = require('ipc')
 const Menu = require('menu')
 const menuTemplate = require('./menu-template.js')
 
@@ -25,6 +26,10 @@ function createMainWindow () {
   win.on('closed', onClosed)
   return win
 }
+
+ipc.on('quit', function () {
+  app.quit()
+})
 
 app.on('window-all-closed', () => {
   if (process.platform !== 'darwin') app.quit()
