@@ -1,11 +1,12 @@
 # Change Log
 
-## [Unreleased](https://github.com/kvnneff/bloxparty/tree/HEAD)
-
-[Full Changelog](https://github.com/kvnneff/bloxparty/compare/1.0.1...HEAD)
+## [2.0.0](https://github.com/kvnneff/bloxparty/tree/2.0.0) (2015-11-01)
+[Full Changelog](https://github.com/kvnneff/bloxparty/compare/1.0.1...2.0.0)
 
 **Closed issues:**
 
+- Create installers [\#13](https://github.com/kvnneff/bloxparty/issues/13)
+- Website [\#9](https://github.com/kvnneff/bloxparty/issues/9)
 - No "Game over" [\#6](https://github.com/kvnneff/bloxparty/issues/6)
 - Log out button don't have any actions [\#5](https://github.com/kvnneff/bloxparty/issues/5)
 - Dev install failed on Windows [\#3](https://github.com/kvnneff/bloxparty/issues/3)
@@ -13,6 +14,9 @@
 
 **Merged pull requests:**
 
+- Add/exit [\#16](https://github.com/kvnneff/bloxparty/pull/16) ([kvnneff](https://github.com/kvnneff))
+- Ui [\#15](https://github.com/kvnneff/bloxparty/pull/15) ([kvnneff](https://github.com/kvnneff))
+- Add packager [\#14](https://github.com/kvnneff/bloxparty/pull/14) ([G07cha](https://github.com/G07cha))
 - Change cursor for title in topbar [\#11](https://github.com/kvnneff/bloxparty/pull/11) ([G07cha](https://github.com/G07cha))
 - Add new screenshot [\#8](https://github.com/kvnneff/bloxparty/pull/8) ([G07cha](https://github.com/G07cha))
 - Hide login button on connect screen.  Fixes \#5. [\#7](https://github.com/kvnneff/bloxparty/pull/7) ([kvnneff](https://github.com/kvnneff))
