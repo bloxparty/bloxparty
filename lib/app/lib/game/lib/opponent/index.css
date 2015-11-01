@@ -1,7 +1,8 @@
 .GameOpponent {
   vertical-align: top;
   flex: 0 0 100px;
-  height: 200px;
+  height: 250px;
+  margin-right: var(--space-large-px);
 }
 
 .GameOpponent-canvasContainer {
@@ -9,6 +10,12 @@
   height: 200px;
   background: rgb(0, 19, 39);
   position: relative;
+}
+
+.GameOpponent-name {
+  background-color: rgb(15, 44, 130);
+  padding: var(--space-small-px);
+  text-align: center;
 }
 
 .GameOpponent-canvas {
