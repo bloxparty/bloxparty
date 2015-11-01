@@ -1,7 +1,7 @@
 {
   "name": "bloxparty",
   "description": "Multiplayer Tetris built with Electron",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "author": "Kevin Neff <kvnneff@gmail.com>",
   "bugs": {
     "url": "https://github.com/kvnneff/bloxparty/issues"
@@ -58,24 +58,20 @@
   "productName": "BloxParty",
   "repository": "https://github.com/kvnneff/bloxparty.git",
   "scripts": {
-	"release": "npm run clean && npm i && npm run build && npm package",
-	  
-	"package": "npm run package:win32 && npm run package:win64 && npm run package:osx",
-	"package:win32": "electron-builder \"dist/BloxParty-win32-ia32/\" --platform=win --out=\"dist/\" --config=packager.json && mv ./dist/BloxParty Setup.exe ./dist/BloxParty-win32-ia32.exe",
-	"package:win64": "electron-builder \"dist/BloxParty-win32-x64/\" --platform=win --out=\"dist/\" --config=packager.json && mv ./dist/BloxParty Setup.exe ./dist/BloxParty-win32-x64.exe",
-	"package:osx": "electron-builder \"dist/BloxParty-darwin-x64/BloxParty.app\" --platform=osx --out=\"dist/\" --config=packager.json",
-	  
+  	"release": "npm run clean && npm i && npm run build && npm run package",
+  	"package": "npm run package:win32 && npm run package:win64 && npm run package:osx",
+  	"package:win32": "electron-builder \"dist/BloxParty-win32-ia32/\" --platform=win --out=\"dist/\" --config=packager.json && mv \"./dist/BloxParty Setup.exe\" ./dist/BloxParty-win32-ia32.exe",
+  	"package:win64": "electron-builder \"dist/BloxParty-win32-x64/\" --platform=win --out=\"dist/\" --config=packager.json && mv \"./dist/BloxParty Setup.exe\" ./dist/BloxParty-win32-x64.exe",
+  	"package:osx": "electron-builder \"dist/BloxParty-darwin-x64/BloxParty.app\" --platform=osx --out=\"dist/\" --config=packager.json",
     "build": "electron-packager . $npm_package_productName --out=dist --ignore='^/dist$' --ignore='node_modules/(bloxparty-board|bus|component-clone|component-emitter|cuid|deku|deku-form|moniker|query-string|socket.io-client|virtual-element|wayfarer)' --prune --overwrite --asar --all --version=$npm_package_electronVersion",
     "build-css": "mkdir -p build & postcss -u postcss-copy-assets -u postcss-import -u postcss-cssnext -o ./build/index.css ./lib/index.css",
     "build-js": "mkdir -p build & browserify lib/index.js -t [babelify --ignore socket.io-client] -t --outfile build/index.js",
     "build-ui": "npm run build-css && npm run build-js",
-	
-	"clean": "rm -rf ./dist",
+  	"clean": "rm -rf ./dist",
     "lint": "standard ./lib/**/*.js && fixpack",
     "server": "http-server ./",
     "start": "npm run build-ui && electron .",
     "test": "mochify --transform [babelify --ignore socket.io-client --ignore electron-debug] test/index.js",
-	  
     "watch": "npm run watch-css & npm run watch-js",
     "watch-css": "chokidar './lib/**/*.css' -c 'npm run build-css'",
     "watch-js": "chokidar './lib/**/*.js' -c 'npm run build-js'"
