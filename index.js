@@ -16,7 +16,7 @@ function onClosed () {
 function createMainWindow () {
   const win = new BrowserWindow({
     width: 920,
-    height: 620,
+    height: 700,
     center: true,
     'standard-window': false,
     frame: false,

@@ -15,5 +15,5 @@
   display: inline-block;
   vertical-align: top;
   margin-left: var(--space-medium-px);
-  width:400px;
+  width: auto;
 }
