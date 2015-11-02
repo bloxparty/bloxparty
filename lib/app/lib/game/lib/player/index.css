@@ -5,6 +5,8 @@
 
 .GamePlayer {
   vertical-align: top;
+  float: left;
+  width: 380px;
 }
 
 .GamePlayer-name {

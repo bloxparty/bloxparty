@@ -1,8 +1,7 @@
 .GameOpponent {
   vertical-align: top;
-  flex: 0 0 100px;
   height: 250px;
-  margin-right: var(--space-large-px);
+  text-align: center;
 }
 
 .GameOpponent-canvasContainer {
@@ -22,6 +21,10 @@
   width: 100px;
   height: 200px;
   position: absolute;
+}
+
+.GameOpponent-box {
+  width: 100px;
 }
 
 .GameOpponent-canvas.is-grid {
