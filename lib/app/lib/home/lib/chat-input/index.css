@@ -1,0 +1,16 @@
+.HomeChatInput-formContainer {
+  width: 100%;
+}
+
+.HomeChatInput-inputContainer {
+  width: 100%;
+}
+
+.HomeChatInput-input {
+  width: 100%;
+  color: #fff;
+}
+
+.HomeChatInput-input:focus {
+  color: #fff;
+}

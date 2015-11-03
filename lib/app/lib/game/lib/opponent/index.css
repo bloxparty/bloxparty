@@ -5,10 +5,11 @@
 }
 
 .GameOpponent-canvasContainer {
-  width: 100px;
+  width: 98px;
   height: 200px;
   background: rgb(0, 19, 39);
   position: relative;
+  text-align: left;
 }
 
 .GameOpponent-name {
@@ -18,7 +19,7 @@
 }
 
 .GameOpponent-canvas {
-  width: 100px;
+  width: 98px;
   height: 200px;
   position: absolute;
 }
