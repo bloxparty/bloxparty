@@ -28,6 +28,7 @@
   },
   "devDependencies": {
     "assert-element": "^0.3.1",
+    "autoprefixer": "^6.0.3",
     "babelify": "^6.3.0",
     "browserify": "^11.1.0",
     "browserify-test": "^2.0.0",
@@ -45,7 +46,8 @@
     "postcss-copy-assets": "^0.3.0",
     "postcss-cssnext": "^2.1.0",
     "postcss-import": "^7.0.0",
-    "standard": "^5.2.2"
+    "standard": "^5.2.2",
+    "uglifyify": "^3.0.1"
   },
   "electronVersion": "0.33.0",
   "homepage": "https://github.com/kvnneff/bloxparty-server#readme",
@@ -67,7 +69,7 @@
     "package:osx": "electron-builder \"dist/BloxParty-darwin-x64/BloxParty.app\" --platform=osx --out=\"dist/\" --config=packager.json",
     "build": "electron-packager . $npm_package_productName --out=dist --ignore='^/dist$' --ignore='node_modules/(bloxparty-board|bus|component-clone|component-emitter|cuid|deku|deku-form|moniker|query-string|socket.io-client|virtual-element|wayfarer)' --prune --overwrite --asar --all --version=$npm_package_electronVersion",
     "build-css": "mkdir -p build & postcss -u postcss-copy-assets -u postcss-import -u postcss-cssnext -o ./build/index.css ./lib/index.css",
-    "build-js": "mkdir -p build & browserify lib/index.js -t [babelify --ignore socket.io-client] -t --outfile build/index.js",
+    "build-js": "mkdir -p build & browserify lib/index.js -t [babelify --ignore socket.io-client] -t uglifyify --outfile build/index.js",
     "build-ui": "npm run build-css && npm run build-js",
     "clean": "rm -rf ./dist",
     "lint": "standard ./lib/**/*.js && fixpack",
