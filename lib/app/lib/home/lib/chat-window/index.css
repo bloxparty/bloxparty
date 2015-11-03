@@ -38,3 +38,7 @@
 }
 
 .HomeChatWindow-logText {}
+
+.HomeChatWindow-logDate {
+  margin-right: var(--space-small-px);
+}
