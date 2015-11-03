@@ -9,6 +9,7 @@
   rgba(0, 0, 0, 0.7) 0 1px 2px 0px,
   rgba(9, 9, 9, 0.6) 0 1px 2px 0px;
   -webkit-app-region: no-drag;
+  padding: 0.4em 0.5em;
 }
 
 .Button:focus,

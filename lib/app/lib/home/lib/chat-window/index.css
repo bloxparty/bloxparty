@@ -1,0 +1,40 @@
+.HomeChatWindow {
+  height: 100%;
+  display: flex;
+  flex: 1;
+}
+
+.HomeChatWindow *::-webkit-scrollbar {
+  width: 12px;
+}
+
+.HomeChatWindow *::-webkit-scrollbar-track {
+  background: var(--color-darker-blue);
+  border-left: 1px solid var(--color-blue);
+}
+
+.HomeChatWindow *::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: var(--color-blue);
+}
+
+.HomeChatWindow-chatWindow {
+  width: 100%;
+  overflow-y: auto;
+  font-size: 14px;
+  padding: 3px;
+  border: 1px solid var(--color-blue);
+  background: var(--color-darker-blue);
+  min-height: 0px;
+  margin: var(--space-small-px) 0;
+}
+
+.HomeChatWindow-logItem {
+  list-style-type: none;
+}
+
+.HomeChatWindow-logNick {
+  color: var(--color-orange);
+}
+
+.HomeChatWindow-logText {}

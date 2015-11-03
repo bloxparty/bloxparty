@@ -12,6 +12,7 @@
     "component-clone": "^0.2.2",
     "component-emitter": "^1.2.0",
     "cuid": "*",
+    "deep-diff": "^0.3.3",
     "deku": "^0.5.5",
     "deku-form": "^1.1.4",
     "electron-builder": "^2.0.2",
