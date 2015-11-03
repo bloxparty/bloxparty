@@ -12,16 +12,7 @@ List of public servers:
 
 - `bloxparty-server.kvnneff.me`
 
-This game is meant to eventually be a clone of [TetriNET](http://tetrinet.info/), though there are many features not yet implemented:
-
-**TODO**
-
-* Special blocks
-* Chat
-* Move game logic to server & implement client-side prediction
-* Music
-* Logo
-* Client-side tests
+This game is meant to eventually be a clone of [TetriNET](http://tetrinet.info/).
 
 ## Game Mechanics
 
