@@ -20,7 +20,7 @@ function createMainWindow () {
     center: true,
     'standard-window': false,
     frame: false,
-	icon: './img/icon.png',
+	icon: __dirname + '/img/icon.png',
     title: 'Blox Party'
   })
   win.loadUrl('file://' + __dirname + '/index.html')
