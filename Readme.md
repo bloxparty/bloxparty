@@ -39,6 +39,12 @@ Send garbage lines to your opponents when you clear lines:
 * Build App: `npm run build`
 * Create installers: `npm run release`
 
+## Contributors
+
+* [Kevin Neff](https://github.com/kvnneff)
+* [Konstantin Azizov](https://github.com/G07cha)
+* Anonymous (thanks for the logo!)
+
 ## License
 
 MIT
