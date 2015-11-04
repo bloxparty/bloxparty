@@ -18,6 +18,7 @@
     "electron-builder": "^2.0.2",
     "electron-debug": "^0.2.1",
     "flexboxgrid": "^6.3.0",
+    "font-awesome": "^4.4.0",
     "localstorage-ns": "^1.0.2",
     "moment": "^2.10.6",
     "query-string": "^2.4.1",

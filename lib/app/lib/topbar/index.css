@@ -1,44 +1,38 @@
 .Topbar {
   background: var(--color-darker-blue);
-  box-shadow: 0px 1px 3px #111;
   padding: var(--space-small-px);
-  /*float: left;*/
   height: 30px;
   width: 100%;
-  right: 0;
   top:0;
   left: 0;
+  right:0;
   position: absolute;
   -webkit-app-region: drag;
   -webkit-user-select: none;
-  z-index: 100;
+}
 
+.Topbar .fa {
+  text-align: center;
+  font-size: 18px;
+  margin-left: 5px;
+  color: var(--color-blue);
+  -webkit-app-region: no-drag;
+}
+
+.Topbar .fa:hover {
+  color: var(--color-light-blue);
+  cursor: pointer;
 }
 
 .Topbar-title {
   color: var(--color-silver);
   cursor: default;
   font-size: 16px;
-  margin-left: var(--space-large-px);
+  margin-left: var(--space-small-px);
   text-transform: uppercase;
 }
 
-.Topbar-buttons {
+.Topbar-controls {
   float: right;
-}
-
-.Topbar-button {
-  border-radius: 0px;
-  background: var(--color-dark-blue);
-  padding: 2px 10px 2px 10px;
-  margin: 0px 5px 0px 0px;
-  font-size: 14px;
-}
-
-.Topbar-button:last-of-type {
-  margin: 0;
-}
-
-.Topbar-button:hover {
-  background: color(var(--color-dark-blue) shade(10%));
+  -webkit-app-region: no-drag;
 }
