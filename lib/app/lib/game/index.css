@@ -1,6 +1,5 @@
 @import './lib/opponent';
 @import './lib/player';
-@import './lib/chat';
 
 .Game {
   display: flex;
