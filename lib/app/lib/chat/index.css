@@ -29,19 +29,18 @@
   overflow-y: auto;
   padding: 3px;
   flex: 1;
-  margin-top: var(--space-small-px);
+  margin-top: var(--space-medium-px);
   border-radius: var(--border-radius);
 }
 
-.Chat-formContainer {
-  margin-top: var(--space-small-px);
-}
+.Chat-formContainer {}
 
 .Chat-inputContainer {
   width: 100%;
 }
 
 .Chat-input {
+  margin-top: var(--space-medium-px);
   border-radius: var(--border-radius);
   width: 100%;
   color: #fff;
