@@ -5,6 +5,7 @@
 @import './lib/connect';
 @import './lib/home';
 @import './lib/game';
+@import './lib/chat';
 
 #main {
   width: 100%;

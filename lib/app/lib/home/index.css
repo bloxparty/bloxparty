@@ -1,6 +1,4 @@
 @import './lib/games';
-@import './lib/chat-window';
-@import './lib/chat-input';
 
 .Home {
   height: 100%;

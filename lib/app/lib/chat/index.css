@@ -1,4 +1,4 @@
-.GameChat {
+.Chat {
   min-height: 65px;
   width: 100%;
   display: flex;
@@ -6,23 +6,23 @@
   flex: 1;
 }
 
-.GameChat *::-webkit-scrollbar {
+.Chat *::-webkit-scrollbar {
     width: 12px;
 }
 
-.GameChat *::-webkit-scrollbar-track {
+.Chat *::-webkit-scrollbar-track {
     background: var(--color-darker-blue);
     border-left: 1px solid var(--color-blue);
 }
 
-.GameChat *::-webkit-scrollbar-thumb {
+.Chat *::-webkit-scrollbar-thumb {
     border-radius: 10px;
     background: var(--color-blue);
 }
 
-.GameChat-form {}
+.Chat-form {}
 
-.GameChat-chatWindow {
+.Chat-messages {
   border: 1px solid var(--color-blue);
   background: var(--color-darker-blue);
   font-size: 14px;
@@ -33,31 +33,31 @@
   border-radius: var(--border-radius);
 }
 
-.GameChat-formContainer {
+.Chat-formContainer {
   margin-top: var(--space-small-px);
 }
 
-.GameChat-inputContainer {
+.Chat-inputContainer {
   width: 100%;
 }
 
-.GameChat-input {
+.Chat-input {
   border-radius: var(--border-radius);
   width: 100%;
   color: #fff;
   font-size: 14px;
 }
 
-.GameChat-input:focus {
+.Chat-input:focus {
   color: #fff;
 }
 
-.GameChat-logItem {
+.Chat-logItem {
   list-style-type: none;
 }
 
-.GameChat-logNick {
+.Chat-logNick {
   color: var(--color-orange);
 }
 
-.GameChat-logText {}
+.Chat-logText {}
