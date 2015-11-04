@@ -6,34 +6,36 @@
   height: 100%;
   width: 100%;
   display: flex;
+  flex-flow: column;
 }
 
-.Home-leftColumn {
+.Home-topBlock {
+  display: flex;
+  flex-flow: row;
+}
+
+.Home-playersContainer {
+  height: 100%;
+  margin-left: var(--space-medium-px);
+  max-width: 250px;
   flex: 1;
-  min-width: 350px;
   display: flex;
   flex-flow: column;
-  height: 100%;
 }
 
-.Home-rightColumn {
-  width: 200px;
-  margin-left: var(--space-large-px);
+.Home-playersContainer .Box-content {
+  min-height: 350px;
+  max-height: 350px;
 }
-
-.Home-newGameButton {
-  display: block;
-  margin-top: var(--space-large-px);
-}
-
-.Home-gamesContainer,
-.Home-playersContainer {
-  vertical-align: top;
-}
-
-.Home-playersContainer {}
 
 .Home-gamesContainer {
-  min-width: 350px;
-  flex: 0 1 auto;
+  flex: 1;
+}
+
+.Home-chatContainer {
+  margin-top: var(--space-large-px);
+  width: 100%;
+  flex: 1;
+  display: flex;
+  flex-flow: column;
 }

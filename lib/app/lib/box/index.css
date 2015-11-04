@@ -1,7 +1,6 @@
 .Box {
   border: 1px solid var(--color-dark-blue);
   border-radius: var(--border-radius);
-  display: inline-block;
   width: 100%;
 }
 
@@ -18,6 +17,7 @@
 
 .Box-controls {
   float: right;
+  font-size: 16px;
 }
 
 .Box-content {
@@ -31,7 +31,15 @@
 .Box-head {
   background: linear-gradient(to bottom, rgb(1, 70, 171) 0%, rgb(17, 95, 196) 100%);
   color: var(--color-silver);
-  padding: var(--space-medium-px);
+  padding: var(--space-small-px);
+}
+
+.Box-head--large {
+  background: linear-gradient(to bottom, rgb(1, 70, 171) 0%, rgb(17, 95, 196) 100%);
+  color: var(--color-silver);
+  padding: var(--space-small-px);
+  font-size: 22px;
+  min-height: 45px;
 }
 
 .Box-title {

@@ -2,10 +2,16 @@
 @import './lib/player';
 @import './lib/chat';
 
-.Game {}
+.Game {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+}
+
+.Game-boardBlock {}
 
 .Game-player {
-  display: inline-block;
+  width: 400px;
 }
 
 .Game-roomName {
@@ -13,12 +19,13 @@
 }
 
 .Game-opponents {
-  display: inline-block;
   vertical-align: top;
-  margin-left: var(--space-medium-px);
+  margin-left: var(--space-small-px);
   width: auto;
 }
 
 .Game-chatContainer {
+  height: 100%;
   margin-top: var(--space-small-px);
+  width: 100%;
 }

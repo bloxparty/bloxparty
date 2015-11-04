@@ -1,5 +1,6 @@
 .HomeChatInput-formContainer {
   width: 100%;
+  flex: 1;
 }
 
 .HomeChatInput-inputContainer {
@@ -9,6 +10,9 @@
 .HomeChatInput-input {
   width: 100%;
   color: #fff;
+  font-size: 14px;
+  border-radius: var(--border-radius);
+  margin-top: var(--space-small-px);
 }
 
 .HomeChatInput-input:focus {
