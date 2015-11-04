@@ -1,20 +1,20 @@
 .GamePlayerCanvas {
   background: rgb(0, 19, 39);
-  width: 250px;
-  height: 500px;
+  width: 252px;
+  height: 450px;
   position: relative;
 }
 
 .GamePlayerCanvas-canvas.is-grid {
   width: 252px;
-  height: 500px;
+  height: 450px;
   position: absolute;
   z-index: 1;
 }
 
 .GamePlayerCanvas-canvas.is-shape {
   width: 252px;
-  height: 500px;
+  height: 450px;
   position: absolute;
   z-index: 5;
 }

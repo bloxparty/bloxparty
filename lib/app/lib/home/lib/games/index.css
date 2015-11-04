@@ -1,6 +1,6 @@
 .Games {
-  display: inline-block;
   width: 100%;
+  float: left;
 }
 
 .Games .Box-content--no-padding {
@@ -64,5 +64,4 @@
 }
 
 .Games-name {}
-
 .Games-players {}
