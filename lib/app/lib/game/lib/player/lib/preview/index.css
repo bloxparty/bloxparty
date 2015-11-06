@@ -1,12 +1,5 @@
-.GamePlayerPreview {
-  vertical-align: top;
-}
+.GamePlayerPreview {}
 
 .GamePlayerPreview-head {
   text-align: center;
-}
-.GamePlayerPreview-canvas {
-  background: rgb(0, 19, 39);
-  border: 1px solid var(--color-blue);
-  border-radius: var(--border-radius);
 }

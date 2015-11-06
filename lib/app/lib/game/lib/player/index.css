@@ -15,25 +15,19 @@
   text-align: center;
 }
 
-.GamePlayer-status {}
-
-.GamePlayer-canvas {}
-
-.GamePlayer-preview {}
-
 .GamePlayer-canvasColumn {
   display: table-cell;
 }
 
 .GamePlayer-statusColumn {
   display: table-cell;
-  padding-left: var(--space-large-px);
+  padding-left: var(--space-medium-px);
   width: 125px;
   height: 100%;
+  text-align: center;
 }
 
 .GamePlayer-statusColumnTop {
-  position: absolute;
   top: 0;
 }
 
@@ -47,4 +41,11 @@
 .GamePlayer-statusColumn {
   position: relative;
   vertical-align: top;
+}
+
+.GamePlayer-preview {
+  margin: 0 auto;
+  margin-bottom: var(--space-medium-px);
+  width: 102px;
+  height: 102px;
 }

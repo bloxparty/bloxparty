@@ -1,18 +1,14 @@
 .Box {
-  border: 1px solid var(--color-dark-blue);
+  border: 1px solid var(--color-blue);
+  box-shadow: 0 0 10px rgba(10, 150, 255, 0.4);
   border-radius: var(--border-radius);
   width: 100%;
 }
 
 .Box-button {
   background: var(--color-blue);
-  border-radius: 0px;
   margin: 0;
   padding: 3px 10px 3px 10px;
-}
-
-.Box-button:hover {
-  background: color(var(--color-blue) shade(10%));
 }
 
 .Box-controls {
@@ -29,7 +25,7 @@
 }
 
 .Box-head {
-  background: linear-gradient(to bottom, rgb(1, 70, 171) 0%, rgb(17, 95, 196) 100%);
+  background: linear-gradient(to top, rgb(1, 70, 171) 0%, rgb(15, 90, 190) 100%);
   color: var(--color-silver);
   padding: var(--space-small-px);
 }
@@ -39,10 +35,10 @@
   color: var(--color-silver);
   padding: var(--space-small-px);
   font-size: 22px;
-  min-height: 45px;
+  /*min-height: 45px;*/
 }
 
 .Box-title {
-  font-size: 1.5rem;
-  font-weight: 700;
+  /*font-size: 1.5rem;*/
+  font-weight: 400;
 }
