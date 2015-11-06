@@ -7,7 +7,7 @@
     "url": "https://github.com/kvnneff/bloxparty/issues"
   },
   "dependencies": {
-    "bloxparty-board": "^1.0.6",
+    "bloxparty-board": "^1.0.8",
     "bus": "^0.1.0",
     "component-clone": "^0.2.2",
     "component-emitter": "^1.2.0",
