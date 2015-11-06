@@ -6,12 +6,12 @@
 
   --Grid-gutter-size: var(--space-medium-px);
 
-  --border-radius: 3px;
+  --border-radius: 0px;
 
   --color-red: rgb(239, 72, 54);
   --color-black: rgb(25, 25, 25);
   --color-darker-blue: rgb(2, 10, 26);
-  --color-dark-blue: rgb(17, 95, 196);
+  --color-dark-blue: rgb(1, 70, 171);
   --color-blue: rgb(21, 114, 211);
   --color-light-blue: rgb(150, 255, 255);
 
@@ -23,16 +23,9 @@
 }
 
 @font-face {
-  font-family: 'PT Sans';
-  src: url('fonts/PT_Sans/PT_Sans-Web-Regular.ttf') format('truetype');
+  font-family: 'Play';
+  src: url('fonts/Play/Play-Regular.ttf') format('truetype');
   font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'PT Sans';
-  src: url('fonts/PT_Sans/PT_Sans-Web-Bold.ttf') format('truetype');
-  font-weight: bold;
   font-style: normal;
 }
 
@@ -47,9 +40,12 @@ body,
 }
 
 body {
+  /*-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;*/
   background: linear-gradient(to top, rgb(1,5,20) 0%, rgb(23,28,60) 100%);
   color: var(--color-silver);
-  font-family: 'PT Sans', 'Helvetica', 'Arial', sans-serif;
+  font-family: 'Play', 'PT Sans', 'Helvetica', 'Arial', sans-serif;
+  font-size: 18px;
 }
 
 @import 'suitcss-base';

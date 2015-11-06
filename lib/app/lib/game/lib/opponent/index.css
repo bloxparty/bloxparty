@@ -5,9 +5,8 @@
 }
 
 .GameOpponent-canvasContainer {
-  width: 98px;
+  width: 100px;
   height: 200px;
-  background: rgb(0, 19, 39);
   position: relative;
   text-align: left;
 }
@@ -19,13 +18,13 @@
 }
 
 .GameOpponent-canvas {
-  width: 98px;
+  width: 100px;
   height: 200px;
   position: absolute;
 }
 
 .GameOpponent-box {
-  width: 100px;
+  width: 102px;
 }
 
 .GameOpponent-canvas.is-grid {

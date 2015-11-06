@@ -4,13 +4,15 @@ input {
   color: var(--color-light-blue);
   outline: 0;
   padding: var(--space-small-px);
-  transition: border 0.5s;
+  transform: translateZ(0);
+  transition-duration: 0.3s;
+  transition-property: all;
 }
 
 input:focus {
   outline: 0;
-  border: 1px solid var(--color-orange);
-  color: var(--color-orange)
+  border: 1px solid var(--color-light-blue);
+  box-shadow: 0 0 10px rgba(150, 255, 255, 0.6);
 }
 
 input::selection {
@@ -28,4 +30,13 @@ input::selection {
 
 .FormField-controls {
   margin-bottom: var(--space-medium-px);
+}
+
+.FormField-error {
+  color: var(--color-red);
+  margin-bottom: var(--space-medium-px);
+}
+
+::-webkit-input-placeholder {
+  color: rgba(100, 100, 100, 0.8);
 }
