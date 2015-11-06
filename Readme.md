@@ -26,8 +26,8 @@ Send garbage lines to your opponents when you clear lines:
 
 ## See Also
 
-* [bloxparty-server](https://github.com/kvnneff/bloxparty-server): Server for hosting games
-* [bloxparty-board](https://github.com/kvnneff/bloxparty-board): Core game logic
+* [bloxparty-server](https://github.com/bloxparty/bloxparty-server): Server for hosting games
+* [bloxparty-board](https://github.com/bloxparty/bloxparty-board): Core game logic
 
 ## Dev
 
