@@ -1,10 +1,10 @@
-# Blox Party [![Build Status](https://travis-ci.org/kvnneff/bloxparty.svg?branch=master)](https://travis-ci.org/bloxparty/bloxparty)
+# Blox Party [![Build Status](https://travis-ci.org/bloxparty/bloxparty.svg?branch=master)](https://travis-ci.org/bloxparty/bloxparty)
 
 A multiplayer game built with [Deku](https://github.com/dekujs/deku).
 
 [![screenshot](screen_shot.png)Play through your browser!](http://bloxparty.tk/)
 
-A [Blox Party server](https://github.com/kvnneff/bloxparty-server) is required for hosting games.
+A [Blox Party server](https://github.com/bloxparty/bloxparty-server) is required for hosting games.
 
 List of public servers:
 
