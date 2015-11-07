@@ -1,8 +1,10 @@
+/*global describe, it */
+
 import dom from 'virtual-element'
 import Mock from 'component-mock'
 import assert from '../assertions'
 import App from '../../lib/app'
-import { delay, mount } from '../util'
+import {delay, mount} from '../util'
 
 describe('App', function () {
   let mock = Mock(App)

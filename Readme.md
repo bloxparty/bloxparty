@@ -1,12 +1,10 @@
-# Blox Party [![Build Status](https://travis-ci.org/kvnneff/bloxparty.svg?branch=master)](https://travis-ci.org/kvnneff/bloxparty)
+# Blox Party [![Build Status](https://travis-ci.org/kvnneff/bloxparty.svg?branch=master)](https://travis-ci.org/bloxparty/bloxparty)
 
-A multiplayer Tetris game built with [Electron](http://electron.atom.io/).
+A multiplayer game built with [Deku](https://github.com/dekujs/deku).
 
-![BloxParty](screen_shot.png)
+[Play through your browser](http://bloxparty.tk/play/)!
 
-[Download the latest release](https://github.com/kvnneff/bloxparty/releases) or [play through your browser](http://bloxparty.tk/play/)!
-
-A [Blox Party server](https://github.com/kvnneff/bloxparty-server) is required to host games.
+A [Blox Party server](https://github.com/kvnneff/bloxparty-server) is required for hosting games.
 
 List of public servers:
 
@@ -35,9 +33,7 @@ Send garbage lines to your opponents when you clear lines:
 
 * Init: `npm install`
 * Run: `npm start`
-* Build JS & CSS: `npm run build-ui`
-* Build App: `npm run build`
-* Create installers: `npm run release`
+* Build: `npm run build`
 
 ## Contributors
 
