@@ -2,7 +2,7 @@
 
 A multiplayer game built with [Deku](https://github.com/dekujs/deku).
 
-[Play through your browser](http://bloxparty.tk/)!
+[![screenshot](screen_shot.png)Play through your browser!](http://bloxparty.tk/)
 
 A [Blox Party server](https://github.com/kvnneff/bloxparty-server) is required for hosting games.
 
