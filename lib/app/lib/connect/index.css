@@ -1,5 +1,12 @@
 .Connect {
-  padding: var(--space-large-px);
+  position:absolute;
+  top: 40%;
+  left: 50%;
+  border: 1px solid var(--color-blue);
+  box-shadow: 0 0 10px rgba(10, 150, 255, 0.4);
+  border-radius: var(--border-radius);
+  width: 300px;
+  margin: -100px 0 0 -150px;
   text-align: center;
 }
 
