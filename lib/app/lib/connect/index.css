@@ -1,4 +1,9 @@
 .Connect {
+  padding: var(--space-large-px);
+  text-align: center;
+}
+
+.Connect-boxContainer {
   position:absolute;
   top: 40%;
   left: 50%;
@@ -8,9 +13,6 @@
   width: 300px;
   margin: -100px 0 0 -150px;
   text-align: center;
-}
-
-.Connect-boxContainer {
   display: inline-block;
   width: 300px;
 }
