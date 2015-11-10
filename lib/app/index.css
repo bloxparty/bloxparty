@@ -1,7 +1,6 @@
 @import './lib/button';
 @import './lib/box';
 @import './lib/form';
-@import './lib/topbar';
 @import './lib/connect';
 @import './lib/home';
 @import './lib/game';
@@ -19,5 +18,4 @@
 .App-content {
   height: 100%;
   padding: var(--space-page-padding);
-  padding-top: 40px;
 }
