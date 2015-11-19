@@ -3,3 +3,4 @@ components
 build
 .DS_Store
 dist
+npm-debug.log
