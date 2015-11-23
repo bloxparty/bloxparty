@@ -1,2 +1,3 @@
-import './app'
-import './app/chat'
+// import './app'
+// import './app/chat'
+import './app/reducers'
