@@ -1,27 +1,36 @@
 /*global describe, it */
 
-import dom from 'virtual-element'
 import Mock from 'component-mock'
 import assert from '../assertions'
 import App from '../../lib/app'
-import {delay, mount} from '../util'
+import MainComponent from '../../lib/app/lib/main'
 
 describe('App', function () {
-  let mock = Mock(App)
+  const mock = Mock(App)
 
-  it('should return the App element', function () {
+  it('returns the App element', function () {
     let node = mock.render()
     assert.node.isNode(node, 'div')
     assert.node.hasAttribute(node, 'class', 'App')
   })
-
-  describe('with props', function () {
-    describe('.route', function () {
-      it('should display the given route', function () {
-        let props = { route: { name: 'connect' } }
-        let node = mock.render({props: props})
-        let child = node.children[1].children[0]
-        assert.equal(child.type.name, 'Connect')
+  it('displays the Topbar element', function () {
+    let node = mock.render()
+    assert.node.hasChild(node, 0, function (child) {
+      assert.equal(child.type.name, 'Topbar')
+    })
+  })
+  it('displays a <div> with the class App-content', function () {
+    let node = mock.render()
+    assert.node.hasChild(node, 1, function (child) {
+      assert.node.hasAttribute(child, 'class', 'App-content')
+    })
+  })
+  it('displays the Main element within App-content', function () {
+    let node = mock.render()
+    assert.node.hasChild(node, 1, function (appContent) {
+      assert.node.hasAttribute(appContent, 'class', 'App-content')
+      assert.node.hasChildren(appContent, (Main) => {
+        assert.node.isNode(Main, MainComponent)
       })
     })
   })
