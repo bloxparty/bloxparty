@@ -20,7 +20,7 @@ describe('App', function () {
       it('should display the given route', function () {
         let props = { route: { name: 'connect' } }
         let node = mock.render({props: props})
-        let child = node.children[1].children[0]
+        let child = node.children[0].children[0]
         assert.equal(child.type.name, 'Connect')
       })
     })
