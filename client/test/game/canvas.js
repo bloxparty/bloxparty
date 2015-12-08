@@ -4,7 +4,7 @@ import shapes from 'bloxparty-shapes'
 import clone from 'component-clone'
 import assert from 'assert'
 import {Mock, mount, assert as assertElement, findWithClass} from 'deku-testutils'
-import Board from 'bloxparty-board'
+import Board from '../../../server/board'
 import PlayerCanvas from '../../app/game/player/canvas'
 
 const initialState = {

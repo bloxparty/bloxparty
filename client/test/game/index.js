@@ -2,7 +2,7 @@
 
 import clone from 'component-clone'
 import {Mock, assert as assertElement} from 'deku-testutils'
-import Board from 'bloxparty-board'
+import Board from '../../../server/board'
 import {Game} from '../../app/game'
 
 const initialState = {

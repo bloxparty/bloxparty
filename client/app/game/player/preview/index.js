@@ -1,5 +1,5 @@
 import dom from 'virtual-element'
-import Canvas from 'bloxparty-canvas'
+import Canvas from '../../../../canvas'
 let canvas = null
 
 export const ShapePreview = { name: 'ShapePreview' }

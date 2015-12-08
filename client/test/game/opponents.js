@@ -1,6 +1,6 @@
 /*global describe, it */
 
-import Board from 'bloxparty-board'
+import Board from '../../../server/board'
 import clone from 'component-clone'
 import {Mock, assert as assertElement} from 'deku-testutils'
 import {Opponents} from '../../app/game/opponents'
