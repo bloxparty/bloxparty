@@ -1,3 +1,29 @@
 language: node_js
 node_js:
-- "stable"
+- stable
+install: npm update
+cache:
+  directories:
+  - node_modules
+after_success:
+- eval "$(ssh-agent -s)"
+- chmod 600 .travis/deploy
+- ssh-add .travis/deploy
+- echo -e "Host 104.131.168.144\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
+- git remote add dokku dokku@104.131.168.144:bloxparty
+- git push dokku master
+deploy:
+  provider: npm
+  email: kvnneff@gmail.com
+  api_key:
+    secure: an4+2q5p/Y6jHA36H4c9jGgnFpJ7RVCay2eVuqSavo4q0OqCIzSL7ityGAn+sOublFwqyxuoqyeYvGziDkjHwbDBTf6v6kO6SibQ1DaxCieu9OM3mlpELajSAx4Ul62470HM1BYQ/Or6o6VJ9G+ZIiNeMnM1M5NLkX7FAkCUlN6IwAJ1uvrlzVzyEC0tzlJqlFfqoM6HH5m13Op9jKNdbQzfuPR+ygE1ToAN9zRRQ9dz0UJXW4c1A0rPZXCu2rB4JRSlQkbtelT+qOKl1iSMwpMC+QCWHdxoy1Y+50XJ8AIR11+0UQUZ2lRiaHn5HTQ2oOfBuESZrWUyjNd01jyHFBcNPTKBujfO+dQNSv45a8CfmhfQxbeHkUnTMOtrdF9EPlpWXjs+/mKk6FomoZt1RzBGAKkG0ZdKxRrBC9Tn32epjrpIoRmTNf0ZKppHec0lRRAXz7kntx9agovFea4RHvrl/yRsP9JncrU8HJsLzuIGGBd7a6r3wHXfUI0DUc1UxbMh8SfmY+1Ze0P57LPO4i2CVNfkWMYCaOZRmcOlPQrCjnQf1my70hHB/F55NBEY1P0BxlIEvjc/E0f4VCB/YCCRn/XFOq+gNiTXnuhITMiFj6t1ApNMsFJ/vBd5LemQNT5WqVS55TPLRVFNlPolFfSD/fJAj1guBZF3V2aidn8=
+  on:
+    tags: true
+    repo: bloxparty/bloxparty
+before_install:
+- openssl aes-256-cbc -K $encrypted_9745ef3a3f0b_key -iv $encrypted_9745ef3a3f0b_iv
+  -in .travis/deploy.enc -out .travis/deploy -d
+env:
+  global:
+  - secure: Zqc+8ZOtNpXx4lnoXy6ylFj6fg90GF21oiWQ//OHt4Zjzkjzqar+HjQWxAL9vmsI6wCjULJAM4DPqPyBzKkl+TwF9LAfp5y8XSuHN6mpShKwdy7b1AkRYexxjviUblxyUksM0/0QOGZJxql7nOpWgYpAldXtqyQR3S06+wJDo4e5I59yLlKIs5loHww+K0dPvIMJ6XvWT0c92pXGTZgZOuoPnAx8/+D1kHFy8WJEmoBb0dmE1lQD40dMr17tgCY4JEXrulG2ISFOQtmzKhSJr5qBWRgNilR5uYaP4YlQ7PCbP9B7N3bc8LzAljyKGieE1J0xLRGzqVsC8ZIelK6hww2Uc1583XYV7ccke6wbuCbnetY8RiQFa1YpUJRssHjEgI8GRXb+BhmqukWtojCsME49TpwZNqk76+SoOsy3lZtCcR0txe1FHt2e5RlTWU7Tq9NE44uriEJCdNNOSznO0CokDG0yu2jzjKCzFXpgd4Rpq0xOVyEb/f1r+OFyG8VfHEh7isnAwZ4+ewqW1hk1Sd8c8B5KDa7XB5OVD+5AF5sL0B/n5EIVnstJ8m4XdwxFd39rcvgh0g0moj+Nq3yPnj29j0aKuKEtBMHXdDePmkzvbt5GxxhujeGTZcpkwKilnoIiUvh8bCr15DNzOO3dn5rYu/dGIH7scvuSPMqV1pI=
+  - secure: LKDzzUawZyhtuRG05IrBMrw3YPNsmmggQgSrrJ27gxIxXi7kW0uEFnYCX0wSJr04MbnUJM0jV0krSJvk/MtQoxEo0CTH03JsDVUTVZUyG9MJkAuvAusqoSJxc46DuHZ1vmwY4icc5rRuVt0MsabME6KzmjqmqWQf9YJSY7uszi5HQwC2gof9RcYRyqRMmNtr37Rrtl1xfEYoK2pbTKMK0wv2ti8gwQQjUhI3h6aWLx2nljrDNpzQebVmZAnFWkV3OLLevf1Ju0LxAlXNW+I/H/qSZYvbUmMaf8n3I8+2XVuM4LlHgmksthWCmzlJYcP4p8kz7Rl9WUi28kwVAyNYSQN0Kf2DvFy/YAHGm8qJiJvAMjUex8RVYZj28hlnPJk9xpF9dZfOtqM4YNkrkl/8RqoergO2TWgFmnKHA3Sfk3PGqn/2QmWKFV0Gg0EqgavjiU+DbE/927dR4HNEDrfl9fGlcOR+mrNiE31sRkft6IBOZYtPLGLn2nDwodh2w4VmDKOOWT8RKki39Trr37L5E6UCraoaoznCAm3tDLwmt0qnEkwLh+QfGevO3r5yCg2WjRls2gOr6TE45zknlI5LhhWinRumrot28MEmTp1icZethRQpB0ufY1cNEz/WLkY3xHGliQWQNKY3rAr1P06keMYeXPAHtwIVFq6/Xl57ZQs=
