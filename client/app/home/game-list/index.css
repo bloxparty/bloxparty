@@ -1,0 +1,61 @@
+@import './game-list-item';
+
+.GameList {
+  width: 100%;
+  float: left;
+}
+
+.GameList-boxContent {
+  width: 100%;
+  min-height: 350px;
+  max-height: 350px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.GameList-table {
+  width: 100%;
+}
+
+.GameList-table tbody {}
+
+.GameList-table th,
+.GameList-table td {
+  padding: var(--space-medium-px);
+  text-align: left;
+}
+
+.GameList-head {}
+
+.GameList-empty {
+  text-align: center;
+  margin-top: var(--space-large-px);
+}
+
+.GameList-listContainer {
+  background: var(--color-dark-gray);
+  width: 100%;
+}
+
+.GameList-list {
+  list-style-type: none;
+}
+
+.GameList-listItem {
+  color: var(--color-blue);
+  cursor: pointer;
+  padding: var(--space-medium-px);
+  transition: background 0.3s, color 0.3s;
+  width: 100%;
+}
+
+.GameList-tableHead {}
+
+.GameList-tableHead th {
+  text-align: left;
+  padding: var(--space-medium-px);
+}
+
+.GameList-name {}
+.GameList-players {}
+.GameList-status {}

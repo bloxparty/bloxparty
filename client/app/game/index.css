@@ -1,0 +1,42 @@
+@import './opponents';
+@import './player';
+
+.Game {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+}
+
+.Game-boardBlock {
+  display: flex;
+  flex-flow: row nowrap;
+  /*justify-content: space-around;*/
+  align-items: flex-start;
+}
+
+.Game-player {
+  flex: 0 0 auto;
+}
+
+.Game-roomName {
+  margin-bottom: var(--space-large-px);
+}
+
+.Game-opponents {
+  /*display: inline-block;*/
+  vertical-align: top;
+  margin-left: var(--space-small-px);
+  height: 100%;
+  width: auto;
+}
+
+.Game-chatContainer {
+  /*height: 100%;*/
+  margin-top: var(--space-small-px);
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex: 1;
+}

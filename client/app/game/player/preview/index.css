@@ -1,0 +1,9 @@
+.ShapePreview {}
+
+.ShapePreview-canvas {
+  background: rgb(0, 0, 50);
+}
+
+.ShapePreview-head {
+  text-align: center;
+}

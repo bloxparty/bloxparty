@@ -1,0 +1,23 @@
+/*@import 'deku-bloxparty-box';*/
+@import './button';
+@import './box';
+@import './form';
+@import './topbar';
+@import './signin';
+@import './home';
+@import './game';
+@import './chat';
+
+#main {
+  width: 100%;
+  height: 100%;
+}
+
+.App {
+  height: 100%;
+}
+
+.App-content {
+  height: 100%;
+  padding: var(--space-page-padding);
+}

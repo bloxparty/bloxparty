@@ -1,0 +1,8 @@
+{
+  "name": "Blox Party server",
+  "description": "Blox Party game server",
+  "repository": "https://github.com/bloxparty/bloxparty-server",
+  "website": "http://bloxparty.tk/",
+  "logo": "https://raw.githubusercontent.com/bloxparty/bloxparty/master/img/icon.png",
+  "keywords": ["blox party"]
+}
