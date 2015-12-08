@@ -1,1 +1,10 @@
 screen_shot.png
+client/test
+server/test
+*.md
+.travis.yml
+.babelrc
+.eslintrc
+.zuul.yml
+Procfile
+app.json

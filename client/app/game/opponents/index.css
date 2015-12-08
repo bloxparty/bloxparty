@@ -1,0 +1,7 @@
+@import './opponent';
+
+.Opponents {
+  vertical-align: top;
+  text-align: center;
+  justify-content: flex-start;
+}

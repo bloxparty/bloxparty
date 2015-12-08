@@ -1,0 +1,28 @@
+.SignIn {
+  padding: var(--space-large-px);
+  text-align: center;
+}
+
+.SignIn-boxContainer {
+  display: inline-block;
+  width: 300px;
+}
+
+.SignIn-button {
+  width: 200px;
+}
+
+.SignIn-error {
+  color: var(--color-red);
+  margin-top: var(--space-large-px);
+  margin-bottom: var(--space-large-px);
+}
+
+.SignIn input {
+  width: 200px;
+  padding: var(--space-small-px);
+}
+
+.SignIn-title {
+  margin-bottom: var(--space-large-px);
+}

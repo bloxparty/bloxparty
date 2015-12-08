@@ -1,0 +1,43 @@
+.Opponent {
+  
+}
+
+.Opponent-canvasContainer {
+  width: 100px;
+  height: 200px;
+  position: relative;
+  text-align: left;
+  background: rgb(0, 0, 50);
+}
+
+.Opponent-name {
+  padding: var(--space-small-px);
+  text-align: center;
+}
+
+.Opponent-canvas {
+  width: 100px;
+  height: 200px;
+  position: absolute;
+}
+
+.Opponent-box {
+  width: 102px;
+  margin-bottom: var(--space-large-px);
+}
+
+.Opponent-box .Box-title {
+  font-size: 14px;
+}
+
+.Opponent-box .Box-head {
+  padding: 3px;
+}
+
+.Opponent-canvas.is-grid {
+  z-index: 1;
+}
+
+.Opponent-canvas.is-shape {
+  z-index: 5;
+}
