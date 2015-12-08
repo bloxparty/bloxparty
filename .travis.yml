@@ -1,3 +1,4 @@
+sudo: false
 language: node_js
 node_js:
 - stable
@@ -11,7 +12,11 @@ after_success:
 - ssh-add .travis/deploy
 - echo -e "Host 104.131.168.144\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
 - git remote add dokku dokku@104.131.168.144:bloxparty
+<<<<<<< HEAD
 - git push dokku master
+=======
+- git push dokku
+>>>>>>> 9957073212ba2acb13e91f96fc5155c765428382
 deploy:
   provider: npm
   email: kvnneff@gmail.com

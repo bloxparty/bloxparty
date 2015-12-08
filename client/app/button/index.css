@@ -1,0 +1,22 @@
+.Button {
+  background:linear-gradient(to bottom, rgb(0, 110, 210) 5%, rgb(0, 140, 240) 100%);
+  color: rgb(10, 10, 80);
+  border: 1px solid rgb(0, 10, 100);
+  margin-top: var(--space-medium-px);
+  transition: color 0.3s border 0.3s;
+  box-shadow: inset 0px 1px 0px 0px rgb(0, 160, 240);
+  padding: 0.4em 0.5em;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.3s;
+  transition-property: all;
+}
+
+.Button:focus,
+.Button:hover {
+  outline: 0;
+  color: var(--color-light-blue);
+  border: 1px solid var(--color-light-blue);
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.6), inset 0px 1px 0px 0px rgb(0, 90, 180);
+}

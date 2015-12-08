@@ -1,0 +1,52 @@
+@import "./preview";
+@import "./canvas";
+@import "./status";
+@import "./controls";
+
+.Player {
+  display: inline-block;
+  vertical-align: top;
+  /*float: left;*/
+  width: 380px;
+}
+
+.Player-playerName {
+  background-color: rgb(15, 44, 130);
+  padding: var(--space-small-px);
+  text-align: center;
+}
+
+.Player-canvasColumn {
+  display: table-cell;
+}
+
+.Player-statusColumn {
+  display: table-cell;
+  padding-left: var(--space-medium-px);
+  width: 125px;
+  /*height: 100%;*/
+  text-align: center;
+}
+
+.Player-statusColumnTop {
+  top: 0;
+}
+
+.Player-statusColumnBottom {
+  position: absolute;
+  bottom: 0;
+}
+
+
+.Player-canvas,
+.Player-statusColumn {
+  position: relative;
+  vertical-align: top;
+}
+
+.Player-preview {
+  margin: 0 auto;
+  margin-bottom: var(--space-medium-px);
+  width: 102px;
+  height: 102px;
+}

@@ -1,0 +1,49 @@
+:root {
+  --space-small-px: 5px;
+  --space-medium-px: 10px;
+  --space-large-px: 20px;
+  --space-page-padding: 10px;
+
+  --Grid-gutter-size: var(--space-medium-px);
+
+  --border-radius: 0px;
+
+  --color-red: rgb(239, 72, 54);
+  --color-black: rgb(25, 25, 25);
+  --color-darker-blue: rgb(2, 10, 26);
+  --color-dark-blue: rgb(1, 70, 171);
+  --color-blue: rgb(21, 114, 211);
+  --color-light-blue: rgb(150, 255, 255);
+
+  --color-dark-gray: rgb(20, 25, 25);
+  --color-medium-gray: rgb(150, 150, 150);
+  --color-dark-gray-alt: color(var(--color-dark-gray) tint(5%));
+  --color-silver: rgb(245, 245, 245);
+  --color-orange: rgb(255, 187, 0);
+}
+
+@import url(https://fonts.googleapis.com/css?family=Play);
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+main {
+  height: 100%;
+}
+
+body {
+  /*-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;*/
+  background: linear-gradient(to top, rgb(1,5,20) 0%, rgb(13,18,120) 100%);
+  color: var(--color-silver);
+  font-family: 'Play', 'PT Sans', 'Helvetica', 'Arial', sans-serif;
+  font-size: 18px;
+}
+
+@import 'suitcss-base';
+@import 'suitcss-components-button';
+@import 'flexboxgrid';
+@import "./app";

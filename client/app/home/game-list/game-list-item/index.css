@@ -1,0 +1,9 @@
+.GameListItem.is-Full {
+  color: var(--color-medium-gray);
+}
+
+.GameListItem:hover {
+  background: var(--color-dark-blue);
+  color: var(--color-orange);
+  cursor: pointer;
+}
