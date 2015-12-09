@@ -1,19 +1,25 @@
-var wrapper = require('canvas-text-wrapper').CanvasTextWrapper
-var c = require('color')
+import {CanvasTextWrapper as wrapper} from 'canvas-text-wrapper'
+import c from 'color'
 
-module.exports = function wrapCanvas (canvas, options) {
+/**
+ * Wrap a `canvas` element with some drawing utilities
+ * @param  {DOM} canvas  Canvas element
+ * @param  {Object} options
+ * @return {Object}
+ */
+export default function wrapCanvas (canvas, options) {
   options = options || {}
-  var columns = options.columns || 10
-  var rows = options.rows || 20
-  var context = canvas.getContext('2d')
-  var translate = (context.lineWidth % 2) / 2
-  var canvasWidth = canvas.offsetWidth
-  var canvasHeight = canvas.offsetHeight
-  var cellWidth = canvasWidth / columns
-  var cellHeight = cellWidth
-  var innerWidth = cellWidth - (cellWidth * 0.1) * 2
-  var innerHeight = innerWidth
-  var bevelWidth = cellWidth * 0.1
+  const columns = options.columns || 10
+  const rows = options.rows || 20
+  const context = canvas.getContext('2d')
+  const translate = (context.lineWidth % 2) / 2
+  const canvasWidth = canvas.offsetWidth
+  const canvasHeight = canvas.offsetHeight
+  const cellWidth = canvasWidth / columns
+  const cellHeight = cellWidth
+  const innerWidth = cellWidth - (cellWidth * 0.1) * 2
+  const innerHeight = innerWidth
+  const bevelWidth = cellWidth * 0.1
 
   context.setTransform(1, 0, 0, 1, 0, 0)
   context.translate(translate, translate)
@@ -25,20 +31,20 @@ module.exports = function wrapCanvas (canvas, options) {
    * @param  {Array} grid   Grid array
    */
   function drawGrid (grid) {
-    var batch = {}
-    var y = 0
-    var x = 0
+    const batch = {}
+    let y = 0
+    let x = 0
 
     for (x = 0; x < columns; ++x) {
       for (y = 0; y < rows; ++y) {
         if (grid[y][x]) {
-          var cellColor = grid[y][x]
-          var topLeftBevelColor = c(cellColor).lighten(0.6).rgbString()
-          var bottomRightBevelColor = c(cellColor).darken(0.5).rgbString()
-          var cellX = cellWidth * x
-          var cellY = cellHeight * y
-          var innerX = cellX + (cellWidth * 0.1)
-          var innerY = cellY + (cellHeight * 0.1)
+          let cellColor = grid[y][x]
+          let topLeftBevelColor = c(cellColor).lighten(0.6).rgbString()
+          let bottomRightBevelColor = c(cellColor).darken(0.5).rgbString()
+          let cellX = cellWidth * x
+          let cellY = cellHeight * y
+          let innerX = cellX + (cellWidth * 0.1)
+          let innerY = cellY + (cellHeight * 0.1)
 
           if (!batch[cellColor]) batch[cellColor] = []
           if (!batch[topLeftBevelColor]) batch[topLeftBevelColor] = []
@@ -74,9 +80,11 @@ module.exports = function wrapCanvas (canvas, options) {
     }
 
     context.clearRect(0, -1, canvasWidth, canvasHeight + 1)
-    for (var color in batch) {
+
+    // Draw in batches by color because changing the context.fillStyle has performance costs
+    for (let color in batch) {
       context.fillStyle = color
-      batch[color].forEach(function (operation) {
+      batch[color].forEach((operation) => {
         if (operation.type === 'inner') drawInnerSquare(context, operation)
         if (operation.type === 'topLeftBevel') drawTopLeftBevel(context, operation)
         if (operation.type === 'bottomRightBevel') drawBottomRightBevel(context, operation)
@@ -85,20 +93,20 @@ module.exports = function wrapCanvas (canvas, options) {
   }
 
   function drawShape (startingX, startingY, shape, color) {
-    var topLeftBevelColor = c(color).lighten(0.6).rgbString()
-    var bottomRightBevelColor = c(color).darken(0.5).rgbString()
-    var x = 0
-    var y = 0
+    const topLeftBevelColor = c(color).lighten(0.6).rgbString()
+    const bottomRightBevelColor = c(color).darken(0.5).rgbString()
+    let x = 0
+    let y = 0
 
     context.clearRect(-1, -1, canvasWidth + 1, canvasHeight + 1)
 
     for (y = 0; y < 4; ++y) {
       for (x = 0; x < 4; ++x) {
         if (shape[y][x]) {
-          var cellX = cellWidth * (startingX + x)
-          var cellY = (cellHeight * (startingY + y))
-          var innerX = cellX + (cellWidth * 0.1)
-          var innerY = cellY + (cellHeight * 0.1)
+          let cellX = cellWidth * (startingX + x)
+          let cellY = (cellHeight * (startingY + y))
+          let innerX = cellX + (cellWidth * 0.1)
+          let innerY = cellY + (cellHeight * 0.1)
 
           context.fillStyle = color
           drawInnerSquare(context, {
@@ -135,7 +143,7 @@ module.exports = function wrapCanvas (canvas, options) {
    */
   function drawText (text, options) {
     options = options || {}
-    for (var prop in options) {
+    for (let prop in options) {
       context[prop] = options[prop]
     }
     wrapper(canvas, text, {
@@ -167,11 +175,11 @@ function drawInnerSquare (context, props) {
  * @param  {Object} props Drawing properties
  */
 function drawTopLeftBevel (context, props) {
-  var x = props.x
-  var y = props.y
-  var cellWidth = props.cellWidth
-  var cellHeight = props.cellHeight
-  var bevelWidth = props.bevelWidth
+  const x = props.x
+  const y = props.y
+  const cellWidth = props.cellWidth
+  const cellHeight = props.cellHeight
+  const bevelWidth = props.bevelWidth
 
   context.beginPath()
   context.moveTo(x, y)
@@ -190,11 +198,11 @@ function drawTopLeftBevel (context, props) {
  * @param  {Object} props   Drawing properties
  */
 function drawBottomRightBevel (context, props) {
-  var x = props.x
-  var y = props.y
-  var cellWidth = props.cellWidth
-  var cellHeight = props.cellHeight
-  var bevelWidth = props.bevelWidth
+  const x = props.x
+  const y = props.y
+  const cellWidth = props.cellWidth
+  const cellHeight = props.cellHeight
+  const bevelWidth = props.bevelWidth
 
   context.beginPath()
   context.moveTo(x + cellWidth, y)
