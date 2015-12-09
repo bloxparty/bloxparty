@@ -22,6 +22,12 @@ Send garbage lines to your opponents when you clear lines:
 * Run: `npm start`
 * Build: `npm run build`
 
+## Contributing
+
+Please note that this project is released with a [Contributor Code of Conduct](https://github.com/bloxparty/bloxparty/blob/master/CODE_OF_CONDUCT.md). By participating in this project you agree to abide by its terms.
+
+Contributions are greatly welcomed!  View the [contributing guide](https://github.com/bloxparty/bloxparty/blob/master/CONTRIBUTING.md) to get started and don't be shy about asking for help if you need it.
+
 ## Contributors
 
 * [Kevin Neff](https://github.com/kvnneff)
