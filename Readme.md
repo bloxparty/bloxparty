@@ -2,7 +2,7 @@
 
 A multiplayer falling blocks game built with [Deku](https://github.com/dekujs/deku).
 
-[![screenshot](screen_shot.png)Play through your browser!](http://bloxparty.kvnneff.me/)
+[![screenshot](screen_shot.png)
 
 ## Game Mechanics
 
